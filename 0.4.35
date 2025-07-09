@@ -1,5 +1,0 @@
-Requirement already satisfied: jax in c:\users\joaot\miniconda3\envs\gspsr\lib\site-packages (0.4.23)
-Requirement already satisfied: ml-dtypes>=0.2.0 in c:\users\joaot\miniconda3\envs\gspsr\lib\site-packages (from jax) (0.5.1)
-Requirement already satisfied: numpy>=1.22 in c:\users\joaot\miniconda3\envs\gspsr\lib\site-packages (from jax) (1.26.4)
-Requirement already satisfied: opt-einsum in c:\users\joaot\miniconda3\envs\gspsr\lib\site-packages (from jax) (3.4.0)
-Requirement already satisfied: scipy>=1.9 in c:\users\joaot\miniconda3\envs\gspsr\lib\site-packages (from jax) (1.15.0)
