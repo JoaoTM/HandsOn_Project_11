@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: geospsr
+Version: 0.1
+Summary: Stochastic Poisson Surface Reconstruction with One Solve using Geometric Gaussian Processes
+Author-email: Sidhanth Holalkere <sh844@cornell.edu>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >3.9
+Requires-Dist: jax
+Requires-Dist: flax
+Requires-Dist: tqdm
