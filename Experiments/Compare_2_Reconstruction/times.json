@@ -1,0 +1,866 @@
+[
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p128_pois_ps0000_ns0000.ply",
+    "method": "PSR",
+    "time": 0.5630829334259033,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p128_pois_ps0000_ns0000.ply",
+    "method": "SPSR",
+    "time": 0.5428740978240967,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p128_pois_ps0000_ns0000.ply",
+    "method": "StochasticPSR",
+    "time": 26.315503120422363,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p128_pois_ps0000_ns0000.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 5.078664302825928,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p128_pois_ps0001_ns0050.ply",
+    "method": "PSR",
+    "time": 0.6442244052886963,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p128_pois_ps0001_ns0050.ply",
+    "method": "SPSR",
+    "time": 0.6639158725738525,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p128_pois_ps0001_ns0050.ply",
+    "method": "StochasticPSR",
+    "time": 24.071772813796997,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p128_pois_ps0001_ns0050.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 3.8018009662628174,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p128_pois_ps0002_ns0100.ply",
+    "method": "PSR",
+    "time": 0.6143312454223633,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p128_pois_ps0002_ns0100.ply",
+    "method": "SPSR",
+    "time": 0.6641685962677002,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p128_pois_ps0002_ns0100.ply",
+    "method": "StochasticPSR",
+    "time": 27.357630014419556,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p128_pois_ps0002_ns0100.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 4.41063380241394,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p128_unif_ps0000_ns0000.ply",
+    "method": "PSR",
+    "time": 0.6034810543060303,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p128_unif_ps0000_ns0000.ply",
+    "method": "SPSR",
+    "time": 0.683760404586792,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p128_unif_ps0000_ns0000.ply",
+    "method": "StochasticPSR",
+    "time": 25.184279441833496,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p128_unif_ps0000_ns0000.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 3.6627426147460938,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p128_unif_ps0001_ns0050.ply",
+    "method": "PSR",
+    "time": 0.6038973331451416,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p128_unif_ps0001_ns0050.ply",
+    "method": "SPSR",
+    "time": 0.5632150173187256,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p128_unif_ps0001_ns0050.ply",
+    "method": "StochasticPSR",
+    "time": 23.84551501274109,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p128_unif_ps0001_ns0050.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 3.811164140701294,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p128_unif_ps0002_ns0100.ply",
+    "method": "PSR",
+    "time": 0.6039416790008545,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p128_unif_ps0002_ns0100.ply",
+    "method": "SPSR",
+    "time": 0.603567361831665,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p128_unif_ps0002_ns0100.ply",
+    "method": "StochasticPSR",
+    "time": 22.91661763191223,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p128_unif_ps0002_ns0100.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 7.102806806564331,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p2096_pois_ps0000_ns0000.ply",
+    "method": "PSR",
+    "time": 0.7046048641204834,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p2096_pois_ps0000_ns0000.ply",
+    "method": "SPSR",
+    "time": 0.7046408653259277,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p2096_pois_ps0000_ns0000.ply",
+    "method": "StochasticPSR",
+    "time": 22.449905157089233,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p2096_pois_ps0000_ns0000.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 9.948266506195068,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p2096_pois_ps0001_ns0050.ply",
+    "method": "PSR",
+    "time": 0.7047810554504395,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p2096_pois_ps0001_ns0050.ply",
+    "method": "SPSR",
+    "time": 0.6841073036193848,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p2096_pois_ps0001_ns0050.ply",
+    "method": "StochasticPSR",
+    "time": 21.949288368225098,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p2096_pois_ps0001_ns0050.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 5.631586313247681,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p2096_pois_ps0002_ns0100.ply",
+    "method": "PSR",
+    "time": 0.705214262008667,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p2096_pois_ps0002_ns0100.ply",
+    "method": "SPSR",
+    "time": 0.704547643661499,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p2096_pois_ps0002_ns0100.ply",
+    "method": "StochasticPSR",
+    "time": 25.90433645248413,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p2096_pois_ps0002_ns0100.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 5.549482345581055,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p2096_unif_ps0000_ns0000.ply",
+    "method": "PSR",
+    "time": 0.8457956314086914,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p2096_unif_ps0000_ns0000.ply",
+    "method": "SPSR",
+    "time": 0.7657287120819092,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p2096_unif_ps0000_ns0000.ply",
+    "method": "StochasticPSR",
+    "time": 28.01407814025879,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p2096_unif_ps0000_ns0000.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 5.791149377822876,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p2096_unif_ps0001_ns0050.ply",
+    "method": "PSR",
+    "time": 0.7251083850860596,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p2096_unif_ps0001_ns0050.ply",
+    "method": "SPSR",
+    "time": 0.7250421047210693,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p2096_unif_ps0001_ns0050.ply",
+    "method": "StochasticPSR",
+    "time": 23.301334619522095,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p2096_unif_ps0001_ns0050.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 5.581011533737183,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p2096_unif_ps0002_ns0100.ply",
+    "method": "PSR",
+    "time": 0.7045280933380127,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p2096_unif_ps0002_ns0100.ply",
+    "method": "SPSR",
+    "time": 0.8049793243408203,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p2096_unif_ps0002_ns0100.ply",
+    "method": "StochasticPSR",
+    "time": 26.158723831176758,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p2096_unif_ps0002_ns0100.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 5.534804105758667,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p512_pois_ps0000_ns0000.ply",
+    "method": "PSR",
+    "time": 0.6041748523712158,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p512_pois_ps0000_ns0000.ply",
+    "method": "SPSR",
+    "time": 0.6041443347930908,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p512_pois_ps0000_ns0000.ply",
+    "method": "StochasticPSR",
+    "time": 25.215659141540527,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p512_pois_ps0000_ns0000.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 5.213940382003784,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p512_pois_ps0001_ns0050.ply",
+    "method": "PSR",
+    "time": 0.6036627292633057,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p512_pois_ps0001_ns0050.ply",
+    "method": "SPSR",
+    "time": 0.5833508968353271,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p512_pois_ps0001_ns0050.ply",
+    "method": "StochasticPSR",
+    "time": 24.70642614364624,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p512_pois_ps0001_ns0050.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 4.8043482303619385,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p512_pois_ps0002_ns0100.ply",
+    "method": "PSR",
+    "time": 0.6037712097167969,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p512_pois_ps0002_ns0100.ply",
+    "method": "SPSR",
+    "time": 0.6238927841186523,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p512_pois_ps0002_ns0100.ply",
+    "method": "StochasticPSR",
+    "time": 20.870612382888794,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p512_pois_ps0002_ns0100.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 8.24122428894043,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p512_unif_ps0000_ns0000.ply",
+    "method": "PSR",
+    "time": 0.5836405754089355,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p512_unif_ps0000_ns0000.ply",
+    "method": "SPSR",
+    "time": 0.6237015724182129,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p512_unif_ps0000_ns0000.ply",
+    "method": "StochasticPSR",
+    "time": 21.156564235687256,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p512_unif_ps0000_ns0000.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 4.714263200759888,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p512_unif_ps0001_ns0050.ply",
+    "method": "PSR",
+    "time": 3.912748098373413,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p512_unif_ps0001_ns0050.ply",
+    "method": "SPSR",
+    "time": 0.6437361240386963,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p512_unif_ps0001_ns0050.ply",
+    "method": "StochasticPSR",
+    "time": 22.918035984039307,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p512_unif_ps0001_ns0050.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 5.108220100402832,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p512_unif_ps0002_ns0100.ply",
+    "method": "PSR",
+    "time": 0.6242785453796387,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p512_unif_ps0002_ns0100.ply",
+    "method": "SPSR",
+    "time": 0.6035497188568115,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p512_unif_ps0002_ns0100.ply",
+    "method": "StochasticPSR",
+    "time": 25.58580255508423,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00010218_4769314c71814669ba5d3512_trimesh_013_p512_unif_ps0002_ns0100.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 4.735075235366821,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p128_pois_ps0000_ns0000.ply",
+    "method": "PSR",
+    "time": 0.6035664081573486,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p128_pois_ps0000_ns0000.ply",
+    "method": "SPSR",
+    "time": 0.6035702228546143,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p128_pois_ps0000_ns0000.ply",
+    "method": "StochasticPSR",
+    "time": 24.573821783065796,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p128_pois_ps0000_ns0000.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 3.7646448612213135,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p128_pois_ps0001_ns0050.ply",
+    "method": "PSR",
+    "time": 0.5634465217590332,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p128_pois_ps0001_ns0050.ply",
+    "method": "SPSR",
+    "time": 0.5837991237640381,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p128_pois_ps0001_ns0050.ply",
+    "method": "StochasticPSR",
+    "time": 23.271402835845947,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p128_pois_ps0001_ns0050.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 3.811910629272461,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p128_pois_ps0002_ns0100.ply",
+    "method": "PSR",
+    "time": 0.6035904884338379,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p128_pois_ps0002_ns0100.ply",
+    "method": "SPSR",
+    "time": 0.6037411689758301,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p128_pois_ps0002_ns0100.ply",
+    "method": "StochasticPSR",
+    "time": 24.905234575271606,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p128_pois_ps0002_ns0100.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 3.7242484092712402,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p128_unif_ps0000_ns0000.ply",
+    "method": "PSR",
+    "time": 0.5836610794067383,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p128_unif_ps0000_ns0000.ply",
+    "method": "SPSR",
+    "time": 0.6033217906951904,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p128_unif_ps0000_ns0000.ply",
+    "method": "StochasticPSR",
+    "time": 21.51759624481201,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p128_unif_ps0000_ns0000.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 6.969683647155762,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p128_unif_ps0001_ns0050.ply",
+    "method": "PSR",
+    "time": 0.6034519672393799,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p128_unif_ps0001_ns0050.ply",
+    "method": "SPSR",
+    "time": 0.6034321784973145,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p128_unif_ps0001_ns0050.ply",
+    "method": "StochasticPSR",
+    "time": 22.095184326171875,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p128_unif_ps0001_ns0050.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 3.745507001876831,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p128_unif_ps0002_ns0100.ply",
+    "method": "PSR",
+    "time": 0.5837211608886719,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p128_unif_ps0002_ns0100.ply",
+    "method": "SPSR",
+    "time": 0.6238033771514893,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p128_unif_ps0002_ns0100.ply",
+    "method": "StochasticPSR",
+    "time": 25.300025463104248,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p128_unif_ps0002_ns0100.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 3.7419095039367676,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_pois_ps0000_ns0000.ply",
+    "method": "PSR",
+    "time": 0.6843211650848389,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_pois_ps0000_ns0000.ply",
+    "method": "SPSR",
+    "time": 0.7045595645904541,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_pois_ps0000_ns0000.ply",
+    "method": "StochasticPSR",
+    "time": 25.33430290222168,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_pois_ps0000_ns0000.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 5.568131685256958,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_pois_ps0001_ns0050.ply",
+    "method": "PSR",
+    "time": 0.6953921318054199,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_pois_ps0001_ns0050.ply",
+    "method": "SPSR",
+    "time": 0.7449893951416016,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_pois_ps0001_ns0050.ply",
+    "method": "StochasticPSR",
+    "time": 33.45777249336243,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_pois_ps0001_ns0050.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 6.26478385925293,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_pois_ps0002_ns0100.ply",
+    "method": "PSR",
+    "time": 0.8056216239929199,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_pois_ps0002_ns0100.ply",
+    "method": "SPSR",
+    "time": 0.7654051780700684,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_pois_ps0002_ns0100.ply",
+    "method": "StochasticPSR",
+    "time": 33.418078660964966,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_pois_ps0002_ns0100.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 6.253620862960815,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_unif_ps0000_ns0000.ply",
+    "method": "PSR",
+    "time": 0.7251806259155273,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_unif_ps0000_ns0000.ply",
+    "method": "SPSR",
+    "time": 0.8461816310882568,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_unif_ps0000_ns0000.ply",
+    "method": "StochasticPSR",
+    "time": 29.46061396598816,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_unif_ps0000_ns0000.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 5.968315124511719,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_unif_ps0001_ns0050.ply",
+    "method": "PSR",
+    "time": 4.057127475738525,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_unif_ps0001_ns0050.ply",
+    "method": "SPSR",
+    "time": 0.7449548244476318,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_unif_ps0001_ns0050.ply",
+    "method": "StochasticPSR",
+    "time": 25.18388032913208,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_unif_ps0001_ns0050.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 9.762959003448486,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_unif_ps0002_ns0100.ply",
+    "method": "PSR",
+    "time": 0.7457642555236816,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_unif_ps0002_ns0100.ply",
+    "method": "SPSR",
+    "time": 0.7244415283203125,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_unif_ps0002_ns0100.ply",
+    "method": "StochasticPSR",
+    "time": 28.19138193130493,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_unif_ps0002_ns0100.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 9.26105284690857,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p512_pois_ps0000_ns0000.ply",
+    "method": "PSR",
+    "time": 0.704951286315918,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p512_pois_ps0000_ns0000.ply",
+    "method": "SPSR",
+    "time": 0.6845784187316895,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p512_pois_ps0000_ns0000.ply",
+    "method": "StochasticPSR",
+    "time": 35.65580654144287,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p512_pois_ps0000_ns0000.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 5.9025490283966064,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p512_pois_ps0001_ns0050.ply",
+    "method": "PSR",
+    "time": 0.6444077491760254,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p512_pois_ps0001_ns0050.ply",
+    "method": "SPSR",
+    "time": 0.6847438812255859,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p512_pois_ps0001_ns0050.ply",
+    "method": "StochasticPSR",
+    "time": 30.5430850982666,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p512_pois_ps0001_ns0050.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 5.752847194671631,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p512_pois_ps0002_ns0100.ply",
+    "method": "PSR",
+    "time": 0.6240732669830322,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p512_pois_ps0002_ns0100.ply",
+    "method": "SPSR",
+    "time": 0.6441898345947266,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p512_pois_ps0002_ns0100.ply",
+    "method": "StochasticPSR",
+    "time": 28.78618049621582,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p512_pois_ps0002_ns0100.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 5.2456700801849365,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p512_unif_ps0000_ns0000.ply",
+    "method": "PSR",
+    "time": 0.624260663986206,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p512_unif_ps0000_ns0000.ply",
+    "method": "SPSR",
+    "time": 0.6037650108337402,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p512_unif_ps0000_ns0000.ply",
+    "method": "StochasticPSR",
+    "time": 25.923256874084473,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p512_unif_ps0000_ns0000.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 4.933372974395752,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p512_unif_ps0001_ns0050.ply",
+    "method": "PSR",
+    "time": 0.6044433116912842,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p512_unif_ps0001_ns0050.ply",
+    "method": "SPSR",
+    "time": 0.6443600654602051,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p512_unif_ps0001_ns0050.ply",
+    "method": "StochasticPSR",
+    "time": 24.893211126327515,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p512_unif_ps0001_ns0050.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 4.769071102142334,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p512_unif_ps0002_ns0100.ply",
+    "method": "PSR",
+    "time": 0.6443638801574707,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p512_unif_ps0002_ns0100.ply",
+    "method": "SPSR",
+    "time": 0.6237385272979736,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p512_unif_ps0002_ns0100.ply",
+    "method": "StochasticPSR",
+    "time": 20.892232179641724,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Compare_2_PointSamples/00011000_8a21002f126e4425a811e70a_trimesh_004_p512_unif_ps0002_ns0100.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 8.17000961303711,
+    "status": "success"
+  }
+]

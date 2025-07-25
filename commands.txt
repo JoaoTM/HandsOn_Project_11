@@ -1,0 +1,257 @@
+cd H:\Hands-on_AI_based_3D_Vision\Project_11\AdaptiveSolvers.x64
+
+PoissonRecon.exe ^
+  --in "H:\Hands-on_AI_based_3D_Vision\Project_11\sampled_points.ply" ^
+  --out "H:\Hands-on_AI_based_3D_Vision\Project_11\reconstructed_mesh.ply" ^
+  --depth 10 ^
+  --pointWeight 0 ^
+  --linearFit ^
+  --density
+
+
+
+PoissonRecon.exe ^
+  --in "H:\Hands-on_AI_based_3D_Vision\Project_11\sampled_points.ply" ^
+  --out "H:\Hands-on_AI_based_3D_Vision\Project_11\reconstructed_mesh_Screened.ply" ^
+  --depth 10 ^
+  --pointWeight 4 ^
+  --linearFit ^
+  --density
+
+
+
+
+python reconstruct_surface.py /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/sampled_points.ply 0.01 1.0 20 -d cuda:0 cuda:1 cuda:2 cuda:3 -nl 25 -ng 25 -o reconstructed_mesh_dgp
+
+
+
+Win10 GeoSPSR (no GPU):
+H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\Scripts\activate.bat
+set PYTHONPATH=H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\build\lib
+python H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments\example.py
+
+
+
+
+"""export PYTHONPATH=/path/to/libigl/python:$PYTHONPATH
+cd H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments
+python example.py
+python H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments\example.py"""
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\Scripts>pip3.exe install trimesh 
+/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/GeoSPSR_uv/
+PYTHONPATH=~/HandsOnProject_11/HandsOn_Project_11/GeoSPSR/build/lib python H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments\example.py
+
+WSL Install:
+in kernal.py:  replace with
+from flax.experimental import nnx
+
+In environment: GeoSPSR_uv\lib\site-packages\meshplot\plot.py add
+from IPython.display import display
+
+
+WSL GeoSPSR:
+library:
+(GeoSPSR_uv) user@KirianPC:~/HandsOnProject_11/HandsOn_Project_11/GeoSPSR/GeoSPSR_uv/lib/python3.13/site-packages/
+
+source /HandsOnProject_11/HandsOn_Project_11/GeoSPSR/GeoSPSR_uv/bin/activate
+PYTHONPATH=~/HandsOnProject_11/HandsOn_Project_11/GeoSPSR/build/lib python /mnt/h/Hands-on_AI_based_3D_Vision/HandsOn_Project_11/GeoSPSR/experiments/example_v1.0.py
+
+
+different Datasets
+different nr of points
+Things to Test:
+different Noise levels , Noise + outliers
+reconstruction levels marching 
+cubes vs. MISE: Multiresolution Isosurface Extraction (Octree-Based Surface Reconstruction)
+compare time, #triangles, ease of implementation, P 
+
+
+Chamfer and Hausdorff distances
+
+
+
+Standard PSR
+sosurface Extraction
+Isovalue Selection:
+
+Evaluate the solved implicit function χ at all input points.
+
+Set the isovalue γ to the average of χ at the samples:
+
+\gamma = \frac{1}{|S|} \sum_{s \in S} \chi(s.p)
+This ensures the extracted surface aligns with the input points.
+
+Marching Cubes on Octree:
+
+Extract the χ = γ isosurface using a modified Marching Cubes algorithm:
+
+Handle non-conforming octree edges (where adjacent nodes differ in depth) by projecting finer-level zero-crossings onto coarser faces.
+
+Avoid cracks by enforcing consistency across resolution boundaries.
+
+
+
+Done:
+  script to sample and add noise, different point amounts different noise levels, outlier noise
+
+  script to compare reconstruction and calculate metrics
+
+  check alignment 
+
+  runn  all 
+
+  make latex doc.   SPSR doesnt scale well with 
+
+  make presentation
+
+
+TODO:
+
+make latex doc.
+strech goal: more metrics, more Datasets 
+try GeoSPR
+implement MISE on 
+crunch mesh_distance_results.json
+crunch times.json
+
+do Github
+
+Qualitative comparison
+Conclusion
+
+
+
+
+
+
+
+
+
+
+  Processing file 1: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons__new_test/sampled_p2096_pois_ps0000_ns0000.ply
+Loaded 2096 points with normals
+
+Attempting PSR reconstruction...
+Input points shape: (2096, 3), normals shape: (2096, 3)
+Running PSR with screening_weight=1.0, depth=10
+First point: [ 0.524726  -0.0330123 -0.0858035], First normal: [ 0.964516   0.262341  -0.0297662]
+PSR completed. Output vertices: (4724, 3), faces: (9476, 3)
+Time for PSR: 4.110 seconds
+
+Saving PSR result for sampled_p2096_pois_ps0000_ns0000.ply
+Vertices: (4724, 3), Faces: (9476, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/PSR/sampled_p2096_pois_ps0000_ns0000.ply
+Mesh saved successfully
+SUCCESS: PSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/PSR/sampled_p2096_pois_ps0000_ns0000.ply
+
+Attempting SPSR reconstruction...
+Input points shape: (2096, 3), normals shape: (2096, 3)
+Running SPSR with screening_weight=4.0, depth=10
+SPSR completed. Output vertices: (5011, 3), faces: (10078, 3)
+Time for SPSR: 0.624 seconds
+
+Saving SPSR result for sampled_p2096_pois_ps0000_ns0000.ply
+Vertices: (5011, 3), Faces: (10078, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/SPSR/sampled_p2096_pois_ps0000_ns0000.ply
+Mesh saved successfully
+SUCCESS: SPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/SPSR/sampled_p2096_pois_ps0000_ns0000.ply
+
+Attempting StochasticPSR reconstruction...
+Input points shape: (2096, 3), normals shape: (2096, 3)
+Running StochasticPSR with grid_res=80, box_size=1.5707963267948966
+Calling stochastic_poisson_surface_reconstruction...
+Stochastic reconstruction completed. Running marching cubes...
+Marching cubes completed. Vertices: (1730, 3), faces: (3452, 3)
+Time for StochasticPSR: 20.860 seconds
+
+Saving StochasticPSR result for sampled_p2096_pois_ps0000_ns0000.ply
+Vertices: (1730, 3), Faces: (3452, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/StochasticPSR/sampled_p2096_pois_ps0000_ns0000.ply
+Mesh saved successfully
+SUCCESS: StochasticPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/StochasticPSR/sampled_p2096_pois_ps0000_ns0000.ply
+
+Attempting StochasticPSR_wOneSolve reconstruction...
+Input points shape: (2096, 3), normals shape: (2096, 3)
+Running StochasticPSR_wOneSolve with grid_res=80
+Grid prepared with shape: (512000, 3)
+Computing implicit function...
+SDD: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:02<00:00, 375.58it/s]
+Computing mean: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.35it/s]
+SDD: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:01<00:00, 751.30it/s]
+Computing mean: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 16/16 [00:02<00:00,  6.45it/s]
+Implicit function computed. Shape: (512000,)
+Running marching cubes...
+Marching cubes completed. Vertices: (1622, 3), faces: (3240, 3)
+Time for StochasticPSR_wOneSolve: 7.456 seconds
+
+Saving StochasticPSR_wOneSolve result for sampled_p2096_pois_ps0000_ns0000.ply
+Vertices: (1622, 3), Faces: (3240, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/StochasticPSR_wOneSolve/sampled_p2096_pois_ps0000_ns0000.ply
+Mesh saved successfully
+SUCCESS: StochasticPSR_wOneSolve -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/StochasticPSR_wOneSolve/sampled_p2096_pois_ps0000_ns0000.ply
+
+
+Processing file 2: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons__new_test/sampled_p8384_pois_ps0000_ns0000.ply
+Loaded 8384 points with normals
+
+Attempting PSR reconstruction...
+Input points shape: (8384, 3), normals shape: (8384, 3)
+Running PSR with screening_weight=1.0, depth=10
+First point: [-0.179669  0.265748  0.192294], First normal: [ 0.0309431 -0.224282  -0.974033 ]
+PSR completed. Output vertices: (20116, 3), faces: (40244, 3)
+Time for PSR: 0.947 seconds
+
+Saving PSR result for sampled_p8384_pois_ps0000_ns0000.ply
+Vertices: (20116, 3), Faces: (40244, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/PSR/sampled_p8384_pois_ps0000_ns0000.ply
+Mesh saved successfully
+SUCCESS: PSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/PSR/sampled_p8384_pois_ps0000_ns0000.ply
+
+Attempting SPSR reconstruction...
+Input points shape: (8384, 3), normals shape: (8384, 3)
+Running SPSR with screening_weight=4.0, depth=10
+SPSR completed. Output vertices: (20398, 3), faces: (40812, 3)
+Time for SPSR: 0.947 seconds
+
+Saving SPSR result for sampled_p8384_pois_ps0000_ns0000.ply
+Vertices: (20398, 3), Faces: (40812, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/SPSR/sampled_p8384_pois_ps0000_ns0000.ply
+Mesh saved successfully
+SUCCESS: SPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/SPSR/sampled_p8384_pois_ps0000_ns0000.ply
+
+Attempting StochasticPSR reconstruction...
+Input points shape: (8384, 3), normals shape: (8384, 3)
+Running StochasticPSR with grid_res=80, box_size=1.5707963267948966
+Calling stochastic_poisson_surface_reconstruction...
+Stochastic reconstruction completed. Running marching cubes...
+Marching cubes completed. Vertices: (1726, 3), faces: (3444, 3)
+Time for StochasticPSR: 27.139 seconds
+
+Saving StochasticPSR result for sampled_p8384_pois_ps0000_ns0000.ply
+Vertices: (1726, 3), Faces: (3444, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/StochasticPSR/sampled_p8384_pois_ps0000_ns0000.ply
+Mesh saved successfully
+SUCCESS: StochasticPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/StochasticPSR/sampled_p8384_pois_ps0000_ns0000.ply
+
+Attempting StochasticPSR_wOneSolve reconstruction...
+Input points shape: (8384, 3), normals shape: (8384, 3)
+Running StochasticPSR_wOneSolve with grid_res=80
+Grid prepared with shape: (512000, 3)
+Computing implicit function...
+SDD: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:02<00:00, 357.44it/s]
+Computing mean: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.61it/s]
+SDD: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:01<00:00, 683.75it/s]
+Computing mean:   0%|                                                                                                                                | 0/16 [00:00<?, ?it/s]2025-07-24 23:36:35.908934: W external/xla/xla/hlo/transforms/simplifiers/hlo_rematerialization.cc:3425] Can't reduce memory use below 7.12GiB (7649445478 bytes) by rematerialization; only reduced to 16.12GiB (17309527208 bytes), down from 16.12GiB (17309527208 bytes) originally
+2025-07-24 23:36:46.208767: W external/xla/xla/tsl/framework/bfc_allocator.cc:501] Allocator (GPU_0_bfc) ran out of memory trying to allocate 16.12GiB (rounded to 17307798528)requested by op
+If the cause is memory fragmentation maybe the environment variable 'TF_GPU_ALLOCATOR=cuda_malloc_async' will improve the situation.
+Current allocation summary follows.
+Current allocation summary follows.
+2025-07-24 23:36:46.208844: W external/xla/xla/tsl/framework/bfc_allocator.cc:512] *___________________________________________________________________________________________________
+E0724 23:36:46.208867  116650 pjrt_stream_executor_client.cc:2939] Execution of replica 0 failed: RESOURCE_EXHAUSTED: Out of memory while trying to allocate 17307798376 bytes. [tf-allocator-allocation-error='']
+Computing mean:   0%|                                                                                                                                | 0/16 [00:10<?, ?it/s]
+Failed to compute implicit function: RESOURCE_EXHAUSTED: Out of memory while trying to allocate 17307798376 bytes.
+FAILED StochasticPSR_wOneSolve: RESOURCE_EXHAUSTED: Out of memory while trying to allocate 17307798376 bytes.
+
+Batch processing complete. Processed 2 files.
+Timing data saved to: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/times.json
+Pipeline execution completed.

@@ -1,6 +1,7 @@
 from math import prod
 
-from flax import nnx
+#from flax import nnx
+from flax.experimental import nnx
 from jax import numpy as jnp
 from jax.numpy import cosh, sinh, tanh
 

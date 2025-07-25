@@ -1,0 +1,390 @@
+Microsoft Windows [Version 10.0.19045.6093]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\KKFin>cd H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\Scripts
+
+C:\Users\KKFin>H:_
+'H:_' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\KKFin>H:
+
+H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\Scripts>activate.bat
+
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\Scripts>cd H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments
+
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments>
+
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments>python example.py
+Traceback (most recent call last):
+  File "H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments\example.py", line 24, in <module>
+    from utils import (
+  File "H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments\utils.py", line 3, in <module>
+    from meshplot import plot as plot_mesh
+  File "H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\lib\site-packages\meshplot\__init__.py", line 1, in <module>
+    from .plot import plot, subplot, jupyter, offline, Subplot, website
+  File "H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\lib\site-packages\meshplot\plot.py", line 1, in <module>
+    from .Viewer import Viewer
+  File "H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\lib\site-packages\meshplot\Viewer.py", line 2, in <module>
+    import ipywidgets as widgets
+ModuleNotFoundError: No module named 'ipywidgets'
+
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments>where python
+H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\Scripts\python.exe
+C:\Users\KKFin\AppData\Local\Programs\Python\Python310\python.exe
+C:\ProgramData\anaconda3\python.exe
+D:\Programme\Anaconda3-2024.02-1\python.exe
+C:\Users\KKFin\AppData\Local\Microsoft\WindowsApps\python.exe
+D:\Programme\Inkscape\python.exe
+
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments>where pip
+C:\Users\KKFin\AppData\Local\Programs\Python\Python310\Scripts\pip.exe
+D:\Programme\Anaconda3-2024.02-1\Scripts\pip.exe
+
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments>pip install ipywidgets
+Requirement already satisfied: ipywidgets in c:\users\kkfin\appdata\local\programs\python\python310\lib\site-packages (8.1.7)
+Requirement already satisfied: comm>=0.1.3 in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipywidgets) (0.2.2)
+Requirement already satisfied: ipython>=6.1.0 in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipywidgets) (8.32.0)
+Requirement already satisfied: traitlets>=4.3.1 in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipywidgets) (5.14.3)
+Requirement already satisfied: widgetsnbextension~=4.0.14 in c:\users\kkfin\appdata\local\programs\python\python310\lib\site-packages (from ipywidgets) (4.0.14)
+Requirement already satisfied: jupyterlab_widgets~=3.0.15 in c:\users\kkfin\appdata\local\programs\python\python310\lib\site-packages (from ipywidgets) (3.0.15)
+Requirement already satisfied: colorama in c:\users\kkfin\appdata\local\programs\python\python310\lib\site-packages (from ipython>=6.1.0->ipywidgets) (0.4.6)
+Requirement already satisfied: decorator in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipython>=6.1.0->ipywidgets) (5.1.1)
+Requirement already satisfied: exceptiongroup in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipython>=6.1.0->ipywidgets) (1.2.2)
+Requirement already satisfied: jedi>=0.16 in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipython>=6.1.0->ipywidgets) (0.19.2)
+Requirement already satisfied: matplotlib-inline in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipython>=6.1.0->ipywidgets) (0.1.7)
+Requirement already satisfied: prompt_toolkit<3.1.0,>=3.0.41 in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipython>=6.1.0->ipywidgets) (3.0.50)
+Requirement already satisfied: pygments>=2.4.0 in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipython>=6.1.0->ipywidgets) (2.19.1)
+Requirement already satisfied: stack_data in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipython>=6.1.0->ipywidgets) (0.6.3)
+Requirement already satisfied: typing_extensions>=4.6 in c:\users\kkfin\appdata\local\programs\python\python310\lib\site-packages (from ipython>=6.1.0->ipywidgets) (4.8.0)
+Requirement already satisfied: wcwidth in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from prompt_toolkit<3.1.0,>=3.0.41->ipython>=6.1.0->ipywidgets) (0.2.13)
+Requirement already satisfied: parso<0.9.0,>=0.8.4 in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from jedi>=0.16->ipython>=6.1.0->ipywidgets) (0.8.4)
+Requirement already satisfied: executing>=1.2.0 in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from stack_data->ipython>=6.1.0->ipywidgets) (2.2.0)
+Requirement already satisfied: asttokens>=2.1.0 in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from stack_data->ipython>=6.1.0->ipywidgets) (3.0.0)
+Requirement already satisfied: pure-eval in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from stack_data->ipython>=6.1.0->ipywidgets) (0.2.3)
+
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments>where pip
+C:\Users\KKFin\AppData\Local\Programs\Python\Python310\Scripts\pip.exe
+D:\Programme\Anaconda3-2024.02-1\Scripts\pip.exe
+
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments>python example.py
+Traceback (most recent call last):
+  File "H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments\example.py", line 24, in <module>
+    from utils import (
+  File "H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments\utils.py", line 3, in <module>
+    from meshplot import plot as plot_mesh
+  File "H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\lib\site-packages\meshplot\__init__.py", line 1, in <module>
+    from .plot import plot, subplot, jupyter, offline, Subplot, website
+  File "H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\lib\site-packages\meshplot\plot.py", line 1, in <module>
+    from .Viewer import Viewer
+  File "H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\lib\site-packages\meshplot\Viewer.py", line 2, in <module>
+    import ipywidgets as widgets
+ModuleNotFoundError: No module named 'ipywidgets'
+
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments>H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\.venv\Scripts\pip.exe install ipywidgets
+The system cannot find the path specified.
+
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments>
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments>H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\.venv\Scripts\pip.exe install ipywidgets
+The system cannot find the path specified.
+
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments>
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments>H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\Scripts\python.exe -m ensurepip --upgrade
+Looking in links: c:\Users\KKFin\AppData\Local\Temp\tmpgworbwj3
+Processing c:\users\kkfin\appdata\local\temp\tmpgworbwj3\setuptools-63.2.0-py3-none-any.whl
+Processing c:\users\kkfin\appdata\local\temp\tmpgworbwj3\pip-22.2.1-py3-none-any.whl
+Installing collected packages: setuptools, pip
+Successfully installed pip-22.2.1 setuptools-63.2.0
+
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments>
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments>H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\.venv\Scripts\pip.exe install ipywidgets
+The system cannot find the path specified.
+
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments>cd H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\Scripts
+
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\Scripts>pip.exe install ipywidgets
+Requirement already satisfied: ipywidgets in c:\users\kkfin\appdata\local\programs\python\python310\lib\site-packages (8.1.7)
+Requirement already satisfied: comm>=0.1.3 in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipywidgets) (0.2.2)
+Requirement already satisfied: ipython>=6.1.0 in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipywidgets) (8.32.0)
+Requirement already satisfied: traitlets>=4.3.1 in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipywidgets) (5.14.3)
+Requirement already satisfied: widgetsnbextension~=4.0.14 in c:\users\kkfin\appdata\local\programs\python\python310\lib\site-packages (from ipywidgets) (4.0.14)
+Requirement already satisfied: jupyterlab_widgets~=3.0.15 in c:\users\kkfin\appdata\local\programs\python\python310\lib\site-packages (from ipywidgets) (3.0.15)
+Requirement already satisfied: colorama in c:\users\kkfin\appdata\local\programs\python\python310\lib\site-packages (from ipython>=6.1.0->ipywidgets) (0.4.6)
+Requirement already satisfied: decorator in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipython>=6.1.0->ipywidgets) (5.1.1)
+Requirement already satisfied: exceptiongroup in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipython>=6.1.0->ipywidgets) (1.2.2)
+Requirement already satisfied: jedi>=0.16 in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipython>=6.1.0->ipywidgets) (0.19.2)
+Requirement already satisfied: matplotlib-inline in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipython>=6.1.0->ipywidgets) (0.1.7)
+Requirement already satisfied: prompt_toolkit<3.1.0,>=3.0.41 in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipython>=6.1.0->ipywidgets) (3.0.50)
+Requirement already satisfied: pygments>=2.4.0 in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipython>=6.1.0->ipywidgets) (2.19.1)
+Requirement already satisfied: stack_data in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipython>=6.1.0->ipywidgets) (0.6.3)
+Requirement already satisfied: typing_extensions>=4.6 in c:\users\kkfin\appdata\local\programs\python\python310\lib\site-packages (from ipython>=6.1.0->ipywidgets) (4.8.0)
+Requirement already satisfied: wcwidth in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from prompt_toolkit<3.1.0,>=3.0.41->ipython>=6.1.0->ipywidgets) (0.2.13)
+Requirement already satisfied: parso<0.9.0,>=0.8.4 in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from jedi>=0.16->ipython>=6.1.0->ipywidgets) (0.8.4)
+Requirement already satisfied: executing>=1.2.0 in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from stack_data->ipython>=6.1.0->ipywidgets) (2.2.0)
+Requirement already satisfied: asttokens>=2.1.0 in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from stack_data->ipython>=6.1.0->ipywidgets) (3.0.0)
+Requirement already satisfied: pure-eval in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from stack_data->ipython>=6.1.0->ipywidgets) (0.2.3)
+
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\Scripts>pip install ipywidgetscd H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments
+ERROR: Directory 'H:\\Hands-on_AI_based_3D_Vision\\HandsOn_Project_11\\GeoSPSR\\experiments' is not installable. Neither 'setup.py' nor 'pyproject.toml' found.
+
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\Scripts>
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\Scripts>cd H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments
+
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments>
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments>python example.py
+Traceback (most recent call last):
+  File "H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments\example.py", line 24, in <module>
+    from utils import (
+  File "H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments\utils.py", line 3, in <module>
+    from meshplot import plot as plot_mesh
+  File "H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\lib\site-packages\meshplot\__init__.py", line 1, in <module>
+    from .plot import plot, subplot, jupyter, offline, Subplot, website
+  File "H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\lib\site-packages\meshplot\plot.py", line 1, in <module>
+    from .Viewer import Viewer
+  File "H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\lib\site-packages\meshplot\Viewer.py", line 2, in <module>
+    import ipywidgets as widgets
+ModuleNotFoundError: No module named 'ipywidgets'
+
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments>pip3.exe install ipywidgets
+Collecting ipywidgets
+  Downloading ipywidgets-8.1.7-py3-none-any.whl (139 kB)
+     ---------------------------------------- 139.8/139.8 kB 4.0 MB/s eta 0:00:00
+Collecting widgetsnbextension~=4.0.14
+  Downloading widgetsnbextension-4.0.14-py3-none-any.whl (2.2 MB)
+     ---------------------------------------- 2.2/2.2 MB 15.6 MB/s eta 0:00:00
+Collecting comm>=0.1.3
+  Downloading comm-0.2.2-py3-none-any.whl (7.2 kB)
+Collecting jupyterlab_widgets~=3.0.15
+  Downloading jupyterlab_widgets-3.0.15-py3-none-any.whl (216 kB)
+     ---------------------------------------- 216.6/216.6 kB ? eta 0:00:00
+Collecting ipython>=6.1.0
+  Downloading ipython-8.37.0-py3-none-any.whl (831 kB)
+     ---------------------------------------- 831.9/831.9 kB 17.5 MB/s eta 0:00:00
+Collecting traitlets>=4.3.1
+  Downloading traitlets-5.14.3-py3-none-any.whl (85 kB)
+     ---------------------------------------- 85.4/85.4 kB ? eta 0:00:00
+Collecting jedi>=0.16
+  Downloading jedi-0.19.2-py2.py3-none-any.whl (1.6 MB)
+     ---------------------------------------- 1.6/1.6 MB 24.8 MB/s eta 0:00:00
+Collecting prompt_toolkit<3.1.0,>=3.0.41
+  Downloading prompt_toolkit-3.0.51-py3-none-any.whl (387 kB)
+     ---------------------------------------- 387.8/387.8 kB 25.2 MB/s eta 0:00:00
+Collecting matplotlib-inline
+  Downloading matplotlib_inline-0.1.7-py3-none-any.whl (9.9 kB)
+Requirement already satisfied: typing_extensions>=4.6 in h:\hands-on_ai_based_3d_vision\project_11\geospsr_uv\geospsr_uv\lib\site-packages (from ipython>=6.1.0->ipywidgets) (4.14.1)
+Collecting exceptiongroup
+  Downloading exceptiongroup-1.3.0-py3-none-any.whl (16 kB)
+Requirement already satisfied: colorama in h:\hands-on_ai_based_3d_vision\project_11\geospsr_uv\geospsr_uv\lib\site-packages (from ipython>=6.1.0->ipywidgets) (0.4.6)
+Collecting stack_data
+  Downloading stack_data-0.6.3-py3-none-any.whl (24 kB)
+Collecting decorator
+  Downloading decorator-5.2.1-py3-none-any.whl (9.2 kB)
+Requirement already satisfied: pygments>=2.4.0 in h:\hands-on_ai_based_3d_vision\project_11\geospsr_uv\geospsr_uv\lib\site-packages (from ipython>=6.1.0->ipywidgets) (2.19.2)
+Collecting parso<0.9.0,>=0.8.4
+  Downloading parso-0.8.4-py2.py3-none-any.whl (103 kB)
+     ---------------------------------------- 103.7/103.7 kB 5.8 MB/s eta 0:00:00
+Collecting wcwidth
+  Downloading wcwidth-0.2.13-py2.py3-none-any.whl (34 kB)
+Collecting executing>=1.2.0
+  Downloading executing-2.2.0-py2.py3-none-any.whl (26 kB)
+Collecting pure-eval
+  Downloading pure_eval-0.2.3-py3-none-any.whl (11 kB)
+Collecting asttokens>=2.1.0
+  Downloading asttokens-3.0.0-py3-none-any.whl (26 kB)
+Installing collected packages: wcwidth, pure-eval, widgetsnbextension, traitlets, prompt_toolkit, parso, jupyterlab_widgets, executing, exceptiongroup, decorator, asttokens, stack_data, matplotlib-inline, jedi, comm, ipython, ipywidgets
+Successfully installed asttokens-3.0.0 comm-0.2.2 decorator-5.2.1 exceptiongroup-1.3.0 executing-2.2.0 ipython-8.37.0 ipywidgets-8.1.7 jedi-0.19.2 jupyterlab_widgets-3.0.15 matplotlib-inline-0.1.7 parso-0.8.4 prompt_toolkit-3.0.51 pure-eval-0.2.3 stack_data-0.6.3 traitlets-5.14.3 wcwidth-0.2.13 widgetsnbextension-4.0.14
+
+[notice] A new release of pip available: 22.2.1 -> 25.1.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments>python example.py
+Traceback (most recent call last):
+  File "H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments\example.py", line 24, in <module>
+    from utils import (
+  File "H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments\utils.py", line 3, in <module>
+    from meshplot import plot as plot_mesh
+  File "H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\lib\site-packages\meshplot\__init__.py", line 1, in <module>
+    from .plot import plot, subplot, jupyter, offline, Subplot, website
+  File "H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\lib\site-packages\meshplot\plot.py", line 1, in <module>
+    from .Viewer import Viewer
+  File "H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\lib\site-packages\meshplot\Viewer.py", line 6, in <module>
+    import pythreejs as p3s
+ModuleNotFoundError: No module named 'pythreejs'
+
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments>pip install pythreejs
+Collecting pythreejs
+  Downloading pythreejs-2.4.2-py3-none-any.whl.metadata (5.4 kB)
+Requirement already satisfied: ipywidgets>=7.2.1 in c:\users\kkfin\appdata\local\programs\python\python310\lib\site-packages (from pythreejs) (8.1.7)
+Collecting ipydatawidgets>=1.1.1 (from pythreejs)
+  Downloading ipydatawidgets-4.3.5-py2.py3-none-any.whl.metadata (1.4 kB)
+Requirement already satisfied: numpy in c:\users\kkfin\appdata\local\programs\python\python310\lib\site-packages (from pythreejs) (1.26.1)
+Requirement already satisfied: traitlets in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from pythreejs) (5.14.3)
+Collecting traittypes>=0.2.0 (from ipydatawidgets>=1.1.1->pythreejs)
+  Downloading traittypes-0.2.1-py2.py3-none-any.whl.metadata (1.0 kB)
+Requirement already satisfied: comm>=0.1.3 in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipywidgets>=7.2.1->pythreejs) (0.2.2)
+Requirement already satisfied: ipython>=6.1.0 in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipywidgets>=7.2.1->pythreejs) (8.32.0)
+Requirement already satisfied: widgetsnbextension~=4.0.14 in c:\users\kkfin\appdata\local\programs\python\python310\lib\site-packages (from ipywidgets>=7.2.1->pythreejs) (4.0.14)
+Requirement already satisfied: jupyterlab_widgets~=3.0.15 in c:\users\kkfin\appdata\local\programs\python\python310\lib\site-packages (from ipywidgets>=7.2.1->pythreejs) (3.0.15)
+Requirement already satisfied: colorama in c:\users\kkfin\appdata\local\programs\python\python310\lib\site-packages (from ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (0.4.6)
+Requirement already satisfied: decorator in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (5.1.1)
+Requirement already satisfied: exceptiongroup in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (1.2.2)
+Requirement already satisfied: jedi>=0.16 in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (0.19.2)
+Requirement already satisfied: matplotlib-inline in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (0.1.7)
+Requirement already satisfied: prompt_toolkit<3.1.0,>=3.0.41 in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (3.0.50)
+Requirement already satisfied: pygments>=2.4.0 in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (2.19.1)
+Requirement already satisfied: stack_data in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (0.6.3)
+Requirement already satisfied: typing_extensions>=4.6 in c:\users\kkfin\appdata\local\programs\python\python310\lib\site-packages (from ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (4.8.0)
+Requirement already satisfied: wcwidth in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from prompt_toolkit<3.1.0,>=3.0.41->ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (0.2.13)
+Requirement already satisfied: parso<0.9.0,>=0.8.4 in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from jedi>=0.16->ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (0.8.4)
+Requirement already satisfied: executing>=1.2.0 in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from stack_data->ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (2.2.0)
+Requirement already satisfied: asttokens>=2.1.0 in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from stack_data->ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (3.0.0)
+Requirement already satisfied: pure-eval in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from stack_data->ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (0.2.3)
+Downloading pythreejs-2.4.2-py3-none-any.whl (3.4 MB)
+   ---------------------------------------- 3.4/3.4 MB 22.0 MB/s eta 0:00:00
+Downloading ipydatawidgets-4.3.5-py2.py3-none-any.whl (271 kB)
+Downloading traittypes-0.2.1-py2.py3-none-any.whl (8.6 kB)
+Installing collected packages: traittypes, ipydatawidgets, pythreejs
+Successfully installed ipydatawidgets-4.3.5 pythreejs-2.4.2 traittypes-0.2.1
+
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments>
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments>pip install pythreejs
+Requirement already satisfied: pythreejs in c:\users\kkfin\appdata\local\programs\python\python310\lib\site-packages (2.4.2)
+Requirement already satisfied: ipywidgets>=7.2.1 in c:\users\kkfin\appdata\local\programs\python\python310\lib\site-packages (from pythreejs) (8.1.7)
+Requirement already satisfied: ipydatawidgets>=1.1.1 in c:\users\kkfin\appdata\local\programs\python\python310\lib\site-packages (from pythreejs) (4.3.5)
+Requirement already satisfied: numpy in c:\users\kkfin\appdata\local\programs\python\python310\lib\site-packages (from pythreejs) (1.26.1)
+Requirement already satisfied: traitlets in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from pythreejs) (5.14.3)
+Requirement already satisfied: traittypes>=0.2.0 in c:\users\kkfin\appdata\local\programs\python\python310\lib\site-packages (from ipydatawidgets>=1.1.1->pythreejs) (0.2.1)
+Requirement already satisfied: comm>=0.1.3 in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipywidgets>=7.2.1->pythreejs) (0.2.2)
+Requirement already satisfied: ipython>=6.1.0 in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipywidgets>=7.2.1->pythreejs) (8.32.0)
+Requirement already satisfied: widgetsnbextension~=4.0.14 in c:\users\kkfin\appdata\local\programs\python\python310\lib\site-packages (from ipywidgets>=7.2.1->pythreejs) (4.0.14)
+Requirement already satisfied: jupyterlab_widgets~=3.0.15 in c:\users\kkfin\appdata\local\programs\python\python310\lib\site-packages (from ipywidgets>=7.2.1->pythreejs) (3.0.15)
+Requirement already satisfied: colorama in c:\users\kkfin\appdata\local\programs\python\python310\lib\site-packages (from ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (0.4.6)
+Requirement already satisfied: decorator in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (5.1.1)
+Requirement already satisfied: exceptiongroup in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (1.2.2)
+Requirement already satisfied: jedi>=0.16 in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (0.19.2)
+Requirement already satisfied: matplotlib-inline in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (0.1.7)
+Requirement already satisfied: prompt_toolkit<3.1.0,>=3.0.41 in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (3.0.50)
+Requirement already satisfied: pygments>=2.4.0 in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (2.19.1)
+Requirement already satisfied: stack_data in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (0.6.3)
+Requirement already satisfied: typing_extensions>=4.6 in c:\users\kkfin\appdata\local\programs\python\python310\lib\site-packages (from ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (4.8.0)
+Requirement already satisfied: wcwidth in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from prompt_toolkit<3.1.0,>=3.0.41->ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (0.2.13)
+Requirement already satisfied: parso<0.9.0,>=0.8.4 in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from jedi>=0.16->ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (0.8.4)
+Requirement already satisfied: executing>=1.2.0 in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from stack_data->ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (2.2.0)
+Requirement already satisfied: asttokens>=2.1.0 in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from stack_data->ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (3.0.0)
+Requirement already satisfied: pure-eval in c:\users\kkfin\appdata\roaming\python\python310\site-packages (from stack_data->ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (0.2.3)
+
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments>python example.py
+Traceback (most recent call last):
+  File "H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments\example.py", line 24, in <module>
+    from utils import (
+  File "H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments\utils.py", line 3, in <module>
+    from meshplot import plot as plot_mesh
+  File "H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\lib\site-packages\meshplot\__init__.py", line 1, in <module>
+    from .plot import plot, subplot, jupyter, offline, Subplot, website
+  File "H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\lib\site-packages\meshplot\plot.py", line 1, in <module>
+    from .Viewer import Viewer
+  File "H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\lib\site-packages\meshplot\Viewer.py", line 6, in <module>
+    import pythreejs as p3s
+ModuleNotFoundError: No module named 'pythreejs'
+
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments>cd H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\Scripts
+
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\Scripts>pip3.exe install pythreejs
+Collecting pythreejs
+  Downloading pythreejs-2.4.2-py3-none-any.whl (3.4 MB)
+     ---------------------------------------- 3.4/3.4 MB 11.3 MB/s eta 0:00:00
+Collecting ipydatawidgets>=1.1.1
+  Downloading ipydatawidgets-4.3.5-py2.py3-none-any.whl (271 kB)
+     ---------------------------------------- 271.7/271.7 kB 17.4 MB/s eta 0:00:00
+Requirement already satisfied: ipywidgets>=7.2.1 in h:\hands-on_ai_based_3d_vision\project_11\geospsr_uv\geospsr_uv\lib\site-packages (from pythreejs) (8.1.7)
+Requirement already satisfied: numpy in h:\hands-on_ai_based_3d_vision\project_11\geospsr_uv\geospsr_uv\lib\site-packages (from pythreejs) (2.2.6)
+Requirement already satisfied: traitlets in h:\hands-on_ai_based_3d_vision\project_11\geospsr_uv\geospsr_uv\lib\site-packages (from pythreejs) (5.14.3)
+Collecting traittypes>=0.2.0
+  Downloading traittypes-0.2.1-py2.py3-none-any.whl (8.6 kB)
+Requirement already satisfied: widgetsnbextension~=4.0.14 in h:\hands-on_ai_based_3d_vision\project_11\geospsr_uv\geospsr_uv\lib\site-packages (from ipywidgets>=7.2.1->pythreejs) (4.0.14)
+Requirement already satisfied: ipython>=6.1.0 in h:\hands-on_ai_based_3d_vision\project_11\geospsr_uv\geospsr_uv\lib\site-packages (from ipywidgets>=7.2.1->pythreejs) (8.37.0)
+Requirement already satisfied: jupyterlab_widgets~=3.0.15 in h:\hands-on_ai_based_3d_vision\project_11\geospsr_uv\geospsr_uv\lib\site-packages (from ipywidgets>=7.2.1->pythreejs) (3.0.15)
+Requirement already satisfied: comm>=0.1.3 in h:\hands-on_ai_based_3d_vision\project_11\geospsr_uv\geospsr_uv\lib\site-packages (from ipywidgets>=7.2.1->pythreejs) (0.2.2)
+Requirement already satisfied: prompt_toolkit<3.1.0,>=3.0.41 in h:\hands-on_ai_based_3d_vision\project_11\geospsr_uv\geospsr_uv\lib\site-packages (from ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (3.0.51)
+Requirement already satisfied: typing_extensions>=4.6 in h:\hands-on_ai_based_3d_vision\project_11\geospsr_uv\geospsr_uv\lib\site-packages (from ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (4.14.1)
+Requirement already satisfied: colorama in h:\hands-on_ai_based_3d_vision\project_11\geospsr_uv\geospsr_uv\lib\site-packages (from ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (0.4.6)
+Requirement already satisfied: jedi>=0.16 in h:\hands-on_ai_based_3d_vision\project_11\geospsr_uv\geospsr_uv\lib\site-packages (from ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (0.19.2)
+Requirement already satisfied: pygments>=2.4.0 in h:\hands-on_ai_based_3d_vision\project_11\geospsr_uv\geospsr_uv\lib\site-packages (from ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (2.19.2)
+Requirement already satisfied: matplotlib-inline in h:\hands-on_ai_based_3d_vision\project_11\geospsr_uv\geospsr_uv\lib\site-packages (from ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (0.1.7)
+Requirement already satisfied: stack_data in h:\hands-on_ai_based_3d_vision\project_11\geospsr_uv\geospsr_uv\lib\site-packages (from ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (0.6.3)
+Requirement already satisfied: exceptiongroup in h:\hands-on_ai_based_3d_vision\project_11\geospsr_uv\geospsr_uv\lib\site-packages (from ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (1.3.0)
+Requirement already satisfied: decorator in h:\hands-on_ai_based_3d_vision\project_11\geospsr_uv\geospsr_uv\lib\site-packages (from ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (5.2.1)
+Requirement already satisfied: parso<0.9.0,>=0.8.4 in h:\hands-on_ai_based_3d_vision\project_11\geospsr_uv\geospsr_uv\lib\site-packages (from jedi>=0.16->ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (0.8.4)
+Requirement already satisfied: wcwidth in h:\hands-on_ai_based_3d_vision\project_11\geospsr_uv\geospsr_uv\lib\site-packages (from prompt_toolkit<3.1.0,>=3.0.41->ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (0.2.13)
+Requirement already satisfied: executing>=1.2.0 in h:\hands-on_ai_based_3d_vision\project_11\geospsr_uv\geospsr_uv\lib\site-packages (from stack_data->ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (2.2.0)
+Requirement already satisfied: asttokens>=2.1.0 in h:\hands-on_ai_based_3d_vision\project_11\geospsr_uv\geospsr_uv\lib\site-packages (from stack_data->ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (3.0.0)
+Requirement already satisfied: pure-eval in h:\hands-on_ai_based_3d_vision\project_11\geospsr_uv\geospsr_uv\lib\site-packages (from stack_data->ipython>=6.1.0->ipywidgets>=7.2.1->pythreejs) (0.2.3)
+Installing collected packages: traittypes, ipydatawidgets, pythreejs
+Successfully installed ipydatawidgets-4.3.5 pythreejs-2.4.2 traittypes-0.2.1
+
+[notice] A new release of pip available: 22.2.1 -> 25.1.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\Scripts>python example.py
+C:\Users\KKFin\AppData\Local\Programs\Python\Python310\python.exe: can't open file 'H:\\Hands-on_AI_based_3D_Vision\\Project_11\\GeoSPSR_uv\\GeoSPSR_uv\\Scripts\\example.py': [Errno 2] No such file or directory
+
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\Scripts>python H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments
+H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\Scripts\python.exe: can't find '__main__' module in 'H:\\Hands-on_AI_based_3D_Vision\\HandsOn_Project_11\\GeoSPSR\\experiments'
+
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\Scripts>python H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments\example.py
+Traceback (most recent call last):
+  File "H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments\example.py", line 33, in <module>
+    from geospsr.gp import (
+ModuleNotFoundError: No module named 'geospsr'
+
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\Scripts>set PYTHONPATH=H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\build\lib
+
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\Scripts>python H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments\example.py
+IOError: C:/Users/joaot/Desktop/Universidade/4oAno2oSemestre/Hands-On_AI_3D_Vision/Project_11/GeoSPSR/experiments/meshes/scorpion.obj could not be opened...
+Traceback (most recent call last):
+  File "H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments\example.py", line 46, in <module>
+    v, _, _, f, _, _ = igl.readOBJ("C:/Users/joaot/Desktop/Universidade/4oAno2oSemestre/Hands-On_AI_3D_Vision/Project_11/GeoSPSR/experiments/meshes/scorpion.obj")
+RuntimeError: Failed to read mesh from: C:/Users/joaot/Desktop/Universidade/4oAno2oSemestre/Hands-On_AI_3D_Vision/Project_11/GeoSPSR/experiments/meshes/scorpion.obj
+
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\Scripts>
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\Scripts>python H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments\example.py
+IOError: meshes/scorpion.obj could not be opened...
+Traceback (most recent call last):
+  File "H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments\example.py", line 46, in <module>
+    v, _, _, f, _, _ = igl.readOBJ("meshes/scorpion.obj")
+RuntimeError: Failed to read mesh from: meshes/scorpion.obj
+
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\Scripts>set PYTHONPATH=H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\build\lib
+
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\Scripts>python H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments\example.py
+IOError: /meshes/scorpion.obj could not be opened...
+Traceback (most recent call last):
+  File "H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments\example.py", line 46, in <module>
+    v, _, _, f, _, _ = igl.readOBJ("/meshes/scorpion.obj")
+RuntimeError: Failed to read mesh from: /meshes/scorpion.obj
+
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\Scripts>python H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments\example.py
+Traceback (most recent call last):
+  File "H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments\example.py", line 66, in <module>
+    plot_mesh_cloud_grid((v, f), (p, n), (x_grid, f_grid))
+  File "H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments\utils.py", line 156, in plot_mesh_cloud_grid
+    plot = plot_mesh(v, f)
+  File "H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\lib\site-packages\meshplot\plot.py", line 94, in plot
+    display(view._renderer)
+NameError: name 'display' is not defined
+
+(GeoSPSR_uv) H:\Hands-on_AI_based_3D_Vision\Project_11\GeoSPSR_uv\GeoSPSR_uv\Scripts>python H:\Hands-on_AI_based_3D_Vision\HandsOn_Project_11\GeoSPSR\experiments\example.py
+Renderer(camera=PerspectiveCamera(children=(DirectionalLight(color='white', intensity=0.6, position=(0.0, 0.0, 7.309295807795946), quaternion=(0.0, 0.0, 0.0, 1.0), rotation=(0.0, 0.0, 0.0, 'XYZ'), scale=(1.0, 1.0, 1.0), up=(0.0, 1.0, 0.0)),), fov=30.0, position=(0.0, 0.0, 7.309295807795946), projectionMatrix=(1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0), quaternion=(0.0, 0.0, 0.0, 1.0), rotation=(0.0, 0.0, 0.0, 'XYZ'), scale=(1.0, 1.0, 1.0), up=(0.0, 1.0, 0.0)), controls=[OrbitControls(controlling=PerspectiveCamera(children=(DirectionalLight(color='white', intensity=0.6, position=(0.0, 0.0, 7.309295807795946), quaternion=(0.0, 0.0, 0.0, 1.0), rotation=(0.0, 0.0, 0.0, 'XYZ'), scale=(1.0, 1.0, 1.0), up=(0.0, 1.0, 0.0)),), fov=30.0, position=(0.0, 0.0, 7.309295807795946), projectionMatrix=(1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0), quaternion=(0.0, 0.0, 0.0, 1.0), rotation=(0.0, 0.0, 0.0, 'XYZ'), scale=(1.0, 1.0, 1.0), up=(0.0, 1.0, 0.0)), target=(0.0, 0.0, 0.0))], scene=Scene(children=(PerspectiveCamera(children=(DirectionalLight(color='white', intensity=0.6, position=(0.0, 0.0, 7.309295807795946), quaternion=(0.0, 0.0, 0.0, 1.0), rotation=(0.0, 0.0, 0.0, 'XYZ'), scale=(1.0, 1.0, 1.0), up=(0.0, 1.0, 0.0)),), fov=30.0, position=(0.0, 0.0, 7.309295807795946), projectionMatrix=(1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0), quaternion=(0.0, 0.0, 0.0, 1.0), rotation=(0.0, 0.0, 0.0, 'XYZ'), scale=(1.0, 1.0, 1.0), up=(0.0, 1.0, 0.0)), AmbientLight(intensity=0.5, position=(0.0, 0.0, 0.0), quaternion=(0.0, 0.0, 0.0, 1.0), rotation=(0.0, 0.0, 0.0, 'XYZ'), scale=(1.0, 1.0, 1.0), up=(0.0, 1.0, 0.0)), Mesh(geometry=BufferGeometry(attributes={'color': <BufferAttribute shape=(6315, 3), dtype=float32>, 'index': <BufferAttribute shape=(37878,), dtype=uint32>, 'position': <BufferAttribute shape=(6315, 3), dtype=float32>}), material=MeshStandardMaterial(alphaMap=None, aoMap=None, bumpMap=None, defines={'STANDARD': ''}, displacementMap=None, emissiveMap=None, envMap=None, flatShading=True, lightMap=None, map=None, metalness=0.25, metalnessMap=None, normalMap=None, normalScale=(1.0, 1.0), polygonOffset=True, polygonOffsetFactor=1.0, polygonOffsetUnits=5.0, roughnessMap=None, side='DoubleSide', vertexColors='VertexColors'), position=(0.0, 0.0, 0.0), quaternion=(0.0, 0.0, 0.0, 1.0), rotation=(0.0, 0.0, 0.0, 'XYZ'), scale=(1.0, 1.0, 1.0), up=(0.0, 1.0, 0.0))), fog=None, overrideMaterial=None, position=(0.0, 0.0, 0.0), quaternion=(0.0, 0.0, 0.0, 1.0), rotation=(0.0, 0.0, 0.0, 'XYZ'), scale=(1.0, 1.0, 1.0), up=(0.0, 1.0, 0.0)), shadowMap=WebGLShadowMap())
+Creating interpolator: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████| 977/977 [24:02<00:00,  1.48s/it]
+Computing mean: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.28it/s]
+Computing mean: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.65it/s]
+Computing variance: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:02<00:00,  2.36s/it]
+SDD: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:00<00:00, 1251.91it/s]
+Computing mean: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.73it/s]
+SDD: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:00<00:00, 1788.89it/s]
+Computing mean: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.83it/s]
+SDD: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [01:19<00:00, 12.55it/s]
+Computing variance: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [01:21<00:00, 81.68s/it]
+Computing prior V samples: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████| 11/11 [00:39<00:00,  3.63s/it]
+Computing f update: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 157/157 [00:18<00:00,  8.63it/s]
+Computing prior f samples:  27%|████████████████████████████▎                                                                             | 42/157 [01:06<03:18,  1.73s/it]

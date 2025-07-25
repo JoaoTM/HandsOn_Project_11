@@ -1,0 +1,440 @@
+[
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_1000_pois_ps0000_ns0000.ply",
+    "method": "PSR",
+    "time": 0.6458084583282471,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_1000_pois_ps0000_ns0000.ply",
+    "method": "SPSR",
+    "time": 0.6240389347076416,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_1000_pois_ps0000_ns0000.ply",
+    "method": "StochasticPSR",
+    "time": 21.955106735229492,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_1000_pois_ps0000_ns0000.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 32.063000202178955,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_1000_pois_ps0001_ns0050.ply",
+    "method": "PSR",
+    "time": 0.5833592414855957,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_1000_pois_ps0001_ns0050.ply",
+    "method": "SPSR",
+    "time": 0.5831789970397949,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_1000_pois_ps0001_ns0050.ply",
+    "method": "StochasticPSR",
+    "time": 27.438947200775146,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_1000_pois_ps0001_ns0050.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 26.90040349960327,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_1000_pois_ps0002_ns0100.ply",
+    "method": "PSR",
+    "time": 0.6236476898193359,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_1000_pois_ps0002_ns0100.ply",
+    "method": "SPSR",
+    "time": 0.6243822574615479,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_1000_pois_ps0002_ns0100.ply",
+    "method": "StochasticPSR",
+    "time": 23.75554847717285,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_1000_pois_ps0002_ns0100.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 26.087712049484253,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_1000_unif_ps0000_ns0000.ply",
+    "method": "PSR",
+    "time": 0.6238138675689697,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_1000_unif_ps0000_ns0000.ply",
+    "method": "SPSR",
+    "time": 0.6233131885528564,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_1000_unif_ps0000_ns0000.ply",
+    "method": "StochasticPSR",
+    "time": 25.21342372894287,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_1000_unif_ps0000_ns0000.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 26.72789740562439,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_1000_unif_ps0001_ns0050.ply",
+    "method": "PSR",
+    "time": 0.6646029949188232,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_1000_unif_ps0001_ns0050.ply",
+    "method": "SPSR",
+    "time": 0.6644468307495117,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_1000_unif_ps0001_ns0050.ply",
+    "method": "StochasticPSR",
+    "time": 23.212433099746704,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_1000_unif_ps0001_ns0050.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 26.939331769943237,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_1000_unif_ps0002_ns0100.ply",
+    "method": "PSR",
+    "time": 0.6643707752227783,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_1000_unif_ps0002_ns0100.ply",
+    "method": "SPSR",
+    "time": 0.6435413360595703,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_1000_unif_ps0002_ns0100.ply",
+    "method": "StochasticPSR",
+    "time": 30.049011945724487,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_1000_unif_ps0002_ns0100.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 27.0396146774292,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_100_pois_ps0000_ns0000.ply",
+    "method": "PSR",
+    "time": 0.5832912921905518,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_100_pois_ps0000_ns0000.ply",
+    "method": "SPSR",
+    "time": 0.5834252834320068,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_100_pois_ps0000_ns0000.ply",
+    "method": "StochasticPSR",
+    "time": 25.278606414794922,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_100_pois_ps0000_ns0000.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": null,
+    "status": "failed",
+    "error": "Cannot take a larger sample (size 128) than population (size 100) when 'replace=False'"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_100_pois_ps0001_ns0050.ply",
+    "method": "PSR",
+    "time": 0.5631523132324219,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_100_pois_ps0001_ns0050.ply",
+    "method": "SPSR",
+    "time": 0.603734016418457,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_100_pois_ps0001_ns0050.ply",
+    "method": "StochasticPSR",
+    "time": 28.942965030670166,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_100_pois_ps0001_ns0050.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": null,
+    "status": "failed",
+    "error": "Cannot take a larger sample (size 128) than population (size 100) when 'replace=False'"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_100_pois_ps0002_ns0100.ply",
+    "method": "PSR",
+    "time": 0.5834009647369385,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_100_pois_ps0002_ns0100.ply",
+    "method": "SPSR",
+    "time": 0.563152551651001,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_100_pois_ps0002_ns0100.ply",
+    "method": "StochasticPSR",
+    "time": 24.715900897979736,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_100_pois_ps0002_ns0100.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": null,
+    "status": "failed",
+    "error": "Cannot take a larger sample (size 128) than population (size 100) when 'replace=False'"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_100_unif_ps0000_ns0000.ply",
+    "method": "PSR",
+    "time": 0.786067008972168,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_100_unif_ps0000_ns0000.ply",
+    "method": "SPSR",
+    "time": 0.6645145416259766,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_100_unif_ps0000_ns0000.ply",
+    "method": "StochasticPSR",
+    "time": 24.633497953414917,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_100_unif_ps0000_ns0000.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": null,
+    "status": "failed",
+    "error": "Cannot take a larger sample (size 128) than population (size 100) when 'replace=False'"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_100_unif_ps0001_ns0050.ply",
+    "method": "PSR",
+    "time": 0.6034245491027832,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_100_unif_ps0001_ns0050.ply",
+    "method": "SPSR",
+    "time": 0.603905439376831,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_100_unif_ps0001_ns0050.ply",
+    "method": "StochasticPSR",
+    "time": 29.22456431388855,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_100_unif_ps0001_ns0050.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": null,
+    "status": "failed",
+    "error": "Cannot take a larger sample (size 128) than population (size 100) when 'replace=False'"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_100_unif_ps0002_ns0100.ply",
+    "method": "PSR",
+    "time": 0.684906005859375,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_100_unif_ps0002_ns0100.ply",
+    "method": "SPSR",
+    "time": 0.7247445583343506,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_100_unif_ps0002_ns0100.ply",
+    "method": "StochasticPSR",
+    "time": 32.18698334693909,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_100_unif_ps0002_ns0100.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": null,
+    "status": "failed",
+    "error": "Cannot take a larger sample (size 128) than population (size 100) when 'replace=False'"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_500_pois_ps0000_ns0000.ply",
+    "method": "PSR",
+    "time": 0.7051115036010742,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_500_pois_ps0000_ns0000.ply",
+    "method": "SPSR",
+    "time": 0.6447219848632812,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_500_pois_ps0000_ns0000.ply",
+    "method": "StochasticPSR",
+    "time": 24.90367841720581,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_500_pois_ps0000_ns0000.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 27.560130834579468,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_500_pois_ps0001_ns0050.ply",
+    "method": "PSR",
+    "time": 0.6239223480224609,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_500_pois_ps0001_ns0050.ply",
+    "method": "SPSR",
+    "time": 0.5832774639129639,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_500_pois_ps0001_ns0050.ply",
+    "method": "StochasticPSR",
+    "time": 26.54017949104309,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_500_pois_ps0001_ns0050.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 24.335829973220825,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_500_pois_ps0002_ns0100.ply",
+    "method": "PSR",
+    "time": 0.5837430953979492,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_500_pois_ps0002_ns0100.ply",
+    "method": "SPSR",
+    "time": 0.5833656787872314,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_500_pois_ps0002_ns0100.ply",
+    "method": "StochasticPSR",
+    "time": 25.738388538360596,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_500_pois_ps0002_ns0100.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 27.49834680557251,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_500_unif_ps0000_ns0000.ply",
+    "method": "PSR",
+    "time": 0.6238903999328613,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_500_unif_ps0000_ns0000.ply",
+    "method": "SPSR",
+    "time": 0.6440653800964355,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_500_unif_ps0000_ns0000.ply",
+    "method": "StochasticPSR",
+    "time": 27.534985303878784,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_500_unif_ps0000_ns0000.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 27.162595748901367,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_500_unif_ps0001_ns0050.ply",
+    "method": "PSR",
+    "time": 0.6035137176513672,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_500_unif_ps0001_ns0050.ply",
+    "method": "SPSR",
+    "time": 0.6240079402923584,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_500_unif_ps0001_ns0050.ply",
+    "method": "StochasticPSR",
+    "time": 22.896239280700684,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_500_unif_ps0001_ns0050.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 27.81122326850891,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_500_unif_ps0002_ns0100.ply",
+    "method": "PSR",
+    "time": 0.5833158493041992,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_500_unif_ps0002_ns0100.ply",
+    "method": "SPSR",
+    "time": 0.6040050983428955,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_500_unif_ps0002_ns0100.ply",
+    "method": "StochasticPSR",
+    "time": 26.80908465385437,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_500_unif_ps0002_ns0100.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 27.373274564743042,
+    "status": "success"
+  }
+]

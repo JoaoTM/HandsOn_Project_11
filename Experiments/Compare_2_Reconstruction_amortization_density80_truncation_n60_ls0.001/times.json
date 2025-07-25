@@ -1,0 +1,146 @@
+[
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Experiments/Compare_2_PointSamples_points/00010218_4769314c71814669ba5d3512_trimesh_013_p128_pois_ps0000_ns0000.ply",
+    "method": "PSR",
+    "time": 0.7592122554779053,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Experiments/Compare_2_PointSamples_points/00010218_4769314c71814669ba5d3512_trimesh_013_p128_pois_ps0000_ns0000.ply",
+    "method": "SPSR",
+    "time": 0.686453104019165,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Experiments/Compare_2_PointSamples_points/00010218_4769314c71814669ba5d3512_trimesh_013_p128_pois_ps0000_ns0000.ply",
+    "method": "StochasticPSR",
+    "time": 30.9438579082489,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Experiments/Compare_2_PointSamples_points/00010218_4769314c71814669ba5d3512_trimesh_013_p128_pois_ps0000_ns0000.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 6.949378728866577,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Experiments/Compare_2_PointSamples_points/00010218_4769314c71814669ba5d3512_trimesh_013_p2096_pois_ps0000_ns0000.ply",
+    "method": "PSR",
+    "time": 0.9272828102111816,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Experiments/Compare_2_PointSamples_points/00010218_4769314c71814669ba5d3512_trimesh_013_p2096_pois_ps0000_ns0000.ply",
+    "method": "SPSR",
+    "time": 0.8874349594116211,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Experiments/Compare_2_PointSamples_points/00010218_4769314c71814669ba5d3512_trimesh_013_p2096_pois_ps0000_ns0000.ply",
+    "method": "StochasticPSR",
+    "time": 27.374499082565308,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Experiments/Compare_2_PointSamples_points/00010218_4769314c71814669ba5d3512_trimesh_013_p2096_pois_ps0000_ns0000.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 7.412755966186523,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Experiments/Compare_2_PointSamples_points/00010218_4769314c71814669ba5d3512_trimesh_013_p512_pois_ps0000_ns0000.ply",
+    "method": "PSR",
+    "time": 0.7456674575805664,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Experiments/Compare_2_PointSamples_points/00010218_4769314c71814669ba5d3512_trimesh_013_p512_pois_ps0000_ns0000.ply",
+    "method": "SPSR",
+    "time": 0.6240391731262207,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Experiments/Compare_2_PointSamples_points/00010218_4769314c71814669ba5d3512_trimesh_013_p512_pois_ps0000_ns0000.ply",
+    "method": "StochasticPSR",
+    "time": 25.762773752212524,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Experiments/Compare_2_PointSamples_points/00010218_4769314c71814669ba5d3512_trimesh_013_p512_pois_ps0000_ns0000.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 5.584463834762573,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Experiments/Compare_2_PointSamples_points/00011000_8a21002f126e4425a811e70a_trimesh_004_p128_pois_ps0000_ns0000.ply",
+    "method": "PSR",
+    "time": 0.6036722660064697,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Experiments/Compare_2_PointSamples_points/00011000_8a21002f126e4425a811e70a_trimesh_004_p128_pois_ps0000_ns0000.ply",
+    "method": "SPSR",
+    "time": 0.6032357215881348,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Experiments/Compare_2_PointSamples_points/00011000_8a21002f126e4425a811e70a_trimesh_004_p128_pois_ps0000_ns0000.ply",
+    "method": "StochasticPSR",
+    "time": 25.46133017539978,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Experiments/Compare_2_PointSamples_points/00011000_8a21002f126e4425a811e70a_trimesh_004_p128_pois_ps0000_ns0000.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 4.096744775772095,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Experiments/Compare_2_PointSamples_points/00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_pois_ps0000_ns0000.ply",
+    "method": "PSR",
+    "time": 0.7654924392700195,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Experiments/Compare_2_PointSamples_points/00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_pois_ps0000_ns0000.ply",
+    "method": "SPSR",
+    "time": 0.7250785827636719,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Experiments/Compare_2_PointSamples_points/00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_pois_ps0000_ns0000.ply",
+    "method": "StochasticPSR",
+    "time": 26.29114055633545,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Experiments/Compare_2_PointSamples_points/00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_pois_ps0000_ns0000.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 6.238912582397461,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Experiments/Compare_2_PointSamples_points/00011000_8a21002f126e4425a811e70a_trimesh_004_p512_pois_ps0000_ns0000.ply",
+    "method": "PSR",
+    "time": 0.6644484996795654,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Experiments/Compare_2_PointSamples_points/00011000_8a21002f126e4425a811e70a_trimesh_004_p512_pois_ps0000_ns0000.ply",
+    "method": "SPSR",
+    "time": 0.6446130275726318,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Experiments/Compare_2_PointSamples_points/00011000_8a21002f126e4425a811e70a_trimesh_004_p512_pois_ps0000_ns0000.ply",
+    "method": "StochasticPSR",
+    "time": 26.53648352622986,
+    "status": "success"
+  },
+  {
+    "input_path": "/mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Experiments/Compare_2_PointSamples_points/00011000_8a21002f126e4425a811e70a_trimesh_004_p512_pois_ps0000_ns0000.ply",
+    "method": "StochasticPSR_wOneSolve",
+    "time": 5.157007455825806,
+    "status": "success"
+  }
+]

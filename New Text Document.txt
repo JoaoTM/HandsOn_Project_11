@@ -1,0 +1,108 @@
+%\begin{table}[]
+\begin{tabular}{llllllll}
+Method                                                                                & Year & Repository                                                                                                      & Installatioon                                                                                                                                                                                            & Call                                                & Runtime &  &  \\
+Poisson Surface Reconstruction (PSR)                                                  & 2006 & https://github.com/mkazhdan/PoissonRecon                                                                        & includes a .exe                                                                                                                                                                                          & PoissonRecon.exe --in ... --out ... --pointWeight 0 &         &  &  \\
+Screened Poisson Surface Reconstruction (SPSR)                                        & 2013 & https://github.com/mkazhdan/PoissonRecon                                                                        & includes a .exe                                                                                                                                                                                          & PoissonRecon.exe --in ... --out ... --pointWeight 4 &         &  &  \\
+Deep Geometric Prior for Surface Reconstruction (DGP)                                 & 2019 & https://github.com/fwilliams/deep-geometric-prior                                                               & -                                                                                                                                                                                                        &                                                     &         &  &  \\
+Stochastic Poisson Surface Reconstruction                                             & 2022 & included in Gpytoolbox library                                                                                  & pip install                                                                                                                                                                                              & stochastic\_poisson\_surface\_reconstruction(...)   &         &  &  \\
+Neural Stochastic Screened Poisson Reconstruction (NS-SPSR)                           & 2023 & \begin{tabular}[c]{@{}l@{}}no code found\\ found only Neural Poisson Surface Reconstruction (nPSR)\end{tabular} & -                                                                                                                                                                                                        &                                                     &         &  &  \\
+Stochastic Poisson Reconstruction with One Solve (using Geometric Gaussian Processes) & 2025 & https://github.com/sholalkere/GeoSPSR                                                                           & \begin{tabular}[c]{@{}l@{}}using uv, import stuff from Github, fix imports in code\\ needs linux for GPU support, only generates sdf values in grid - need to implement Marching Cubes/MISE\end{tabular} & python example.py  + Marching Cubes/MISE            &         &  & 
+\end{tabular}
+\end{table}
+
+
+
+\section*{Distance Metrics for Point Clouds}
+
+\subsection*{1. Chamfer Distance}
+Measures the \textit{average} closest-point distance between two point sets.
+
+\begin{equation}
+\text{Chamfer}(A,B) = \frac{1}{|A|}\sum_{a\in A}\min_{b\in B}\|a-b\|^2 + \frac{1}{|B|}\sum_{b\in B}\min_{a\in A}\|b-a\|^2
+\end{equation}
+
+\noindent\textbf{Key Properties:}
+\begin{itemize}
+\item Symmetric (A$\rightarrow$B and B$\rightarrow$A)
+\item Sensitive to overall shape matching
+\item Less sensitive to outliers than Hausdorff
+\item Common in 3D reconstruction evaluation
+\end{itemize}
+
+\subsection*{2. Hausdorff Distance}
+Measures the \textit{maximum} nearest-neighbor distance (worst-case deviation).
+
+\begin{equation}
+\text{Hausdorff}(A,B) = \max\left(\sup_{a\in A}\inf_{b\in B}\|a-b\|, \sup_{b\in B}\inf_{a\in A}\|b-a\|\right)
+\end{equation}
+
+\noindent\textbf{Key Properties:}
+\begin{itemize}
+\item Measures the largest deviation between surfaces
+\item More sensitive to outliers than Chamfer
+\item Useful for quality control (e.g., detecting local defects)
+\end{itemize}
+
+\subsection*{Comparison}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Metric} & \textbf{Chamfer Distance} & \textbf{Hausdorff Distance} \\
+\midrule
+Sensitivity & Average distance & Worst-case distance \\
+Outliers & Less sensitive & Very sensitive \\
+Use Case & Overall shape similarity & Detecting local defects \\
+Computation & Faster (average) & Slower (requires max) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection*{Python Implementation}
+
+\begin{verbatim}
+import numpy as np
+from scipy.spatial import KDTree
+
+def chamfer_distance(A, B):
+    """Compute Chamfer distance between two point clouds"""
+    tree_A = KDTree(A)
+    tree_B = KDTree(B)
+    dist_A = tree_A.query(B)[0]  # A→B
+    dist_B = tree_B.query(A)[0]  # B→A
+    return np.mean(dist_A**2) + np.mean(dist_B**2)
+
+def hausdorff_distance(A, B):
+    """Compute Hausdorff distance between two point clouds"""
+    tree_A = KDTree(A)
+    tree_B = KDTree(B)
+    dist_A = tree_A.query(B)[0].max()  # max A→B
+    dist_B = tree_B.query(A)[0].max()  # max B→A
+    return max(dist_A, dist_B)
+\end{verbatim}
+
+\subsection*{When to Use Which?}
+\begin{itemize}
+\item \textbf{Chamfer}: Good for training neural networks (smooth gradients), evaluating overall reconstruction quality.
+\item \textbf{Hausdorff}: Useful for detecting worst-case errors (e.g., medical imaging where local errors matter).
+\end{itemize}
+
+\noindent Both are widely used in 3D computer vision, especially for evaluating autoencoders, GANs, and reconstruction algorithms.
+
+
+Time in s to run each algorithm for different point amounts. (averaged over sampling methods, noise levels, and 45 different meshes). They do not scale much with the number of points probably bc of parallel computing. The sampling method and noise levels dont influence the speed.
+
+
+
+\begin{table}[]
+\begin{tabular}{|l|l|l|l|}
+\hline
+points                   & 128       & 512       & 2096      \\ \hline
+method                   &           &           &           \\ \hline
+PSR                      & 0.650812  & 0.642060  & 0.750763  \\ \hline
+SPSR                     & 0.642285  & 0.664487  & 0.756413  \\ \hline
+StochasticPSR            & 21.320228 & 21.791579 & 22.180736 \\ \hline
+StochasticPSR\_wOneSolve & 4.040834  & 5.260729  & 6.134872  \\ \hline
+\end{tabular}
+\end{table}

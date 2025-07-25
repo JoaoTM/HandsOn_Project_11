@@ -1,0 +1,1103 @@
+(GeoSPSR_uv) user@KirianPC:~/HandsOnProject_11/HandsOn_Project_11/GeoSPSR/GeoSPSR_uv/lib/python3.13/site-packages/meshplot$ PYTHONPATH=~/HandsOnProject_11/HandsOn_Project_11/GeoSPSR/build/lib python /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/reconstruct_all_PSR.py
+WARNING:absl:Using 'flax.experimental.nnx' is deprecated. Please use 'flax.nnx' instead.
+Starting point cloud reconstruction pipeline...
+
+Starting batch processing of directory: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons
+Output will be saved to: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions
+Initializing PointCloudReconstructor with output base dir: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions
+Creating output directories...
+  Creating directory for PSR: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR
+  Creating directory for SPSR: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR
+  Creating directory for StochasticPSR: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR
+  Creating directory for StochasticPSR_wOneSolve: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR_wOneSolve
+
+
+Processing file 1: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_1000_pois_ps0000_ns0000.ply
+Loaded 1000 points with normals
+
+Attempting PSR reconstruction...
+Input points shape: (1000, 3), normals shape: (1000, 3)
+Running PSR with screening_weight=1.0, depth=10
+First point: [-0.12859  -0.182681 -0.177566], First normal: [-0.964516  -0.262341   0.0297661]
+PSR completed. Output vertices: (2842, 3), faces: (5656, 3)
+Time for PSR: 0.646 seconds
+
+Saving PSR result for sampled_1000_pois_ps0000_ns0000.ply
+Vertices: (2842, 3), Faces: (5656, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_1000_pois_ps0000_ns0000.ply
+Mesh saved successfully
+SUCCESS: PSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_1000_pois_ps0000_ns0000.ply
+
+Attempting SPSR reconstruction...
+Input points shape: (1000, 3), normals shape: (1000, 3)
+Running SPSR with screening_weight=4.0, depth=10
+SPSR completed. Output vertices: (3288, 3), faces: (6572, 3)
+Time for SPSR: 0.624 seconds
+
+Saving SPSR result for sampled_1000_pois_ps0000_ns0000.ply
+Vertices: (3288, 3), Faces: (6572, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_1000_pois_ps0000_ns0000.ply
+Mesh saved successfully
+SUCCESS: SPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_1000_pois_ps0000_ns0000.ply
+
+Attempting StochasticPSR reconstruction...
+Input points shape: (1000, 3), normals shape: (1000, 3)
+Running StochasticPSR with grid_res=80, box_size=1.5707963267948966
+Calling stochastic_poisson_surface_reconstruction...
+Stochastic reconstruction completed. Running marching cubes...
+Marching cubes completed. Vertices: (1742, 3), faces: (3476, 3)
+Time for StochasticPSR: 21.955 seconds
+
+Saving StochasticPSR result for sampled_1000_pois_ps0000_ns0000.ply
+Vertices: (1742, 3), Faces: (3476, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_1000_pois_ps0000_ns0000.ply
+Mesh saved successfully
+SUCCESS: StochasticPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_1000_pois_ps0000_ns0000.ply
+
+Attempting StochasticPSR_wOneSolve reconstruction...
+Input points shape: (1000, 3), normals shape: (1000, 3)
+Running StochasticPSR_wOneSolve with grid_res=80
+Creating interpolator: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████| 977/977 [00:23<00:00, 40.74it/s]
+Grid prepared with shape: (512000, 3)
+Computing implicit function...
+SDD: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:01<00:00, 527.08it/s]
+Computing mean: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.33it/s]
+SDD: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:01<00:00, 759.45it/s]
+Computing mean: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 16/16 [00:01<00:00,  8.55it/s]
+Implicit function computed. Shape: (512000,)
+Running marching cubes...
+Marching cubes completed. Vertices: (1620, 3), faces: (3236, 3)
+Time for StochasticPSR_wOneSolve: 32.063 seconds
+
+Saving StochasticPSR_wOneSolve result for sampled_1000_pois_ps0000_ns0000.ply
+Vertices: (1620, 3), Faces: (3236, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR_wOneSolve/sampled_1000_pois_ps0000_ns0000.ply
+Mesh saved successfully
+SUCCESS: StochasticPSR_wOneSolve -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR_wOneSolve/sampled_1000_pois_ps0000_ns0000.ply
+
+
+Processing file 2: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_1000_pois_ps0001_ns0050.ply
+Loaded 1000 points with normals
+
+Attempting PSR reconstruction...
+Input points shape: (1000, 3), normals shape: (1000, 3)
+Running PSR with screening_weight=1.0, depth=10
+First point: [0.478835 0.163927 0.128879], First normal: [ 0.948484   0.310933  -0.0608123]
+PSR completed. Output vertices: (2858, 3), faces: (5684, 3)
+Time for PSR: 0.583 seconds
+
+Saving PSR result for sampled_1000_pois_ps0001_ns0050.ply
+Vertices: (2858, 3), Faces: (5684, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_1000_pois_ps0001_ns0050.ply
+Mesh saved successfully
+SUCCESS: PSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_1000_pois_ps0001_ns0050.ply
+
+Attempting SPSR reconstruction...
+Input points shape: (1000, 3), normals shape: (1000, 3)
+Running SPSR with screening_weight=4.0, depth=10
+SPSR completed. Output vertices: (3299, 3), faces: (6606, 3)
+Time for SPSR: 0.583 seconds
+
+Saving SPSR result for sampled_1000_pois_ps0001_ns0050.ply
+Vertices: (3299, 3), Faces: (6606, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_1000_pois_ps0001_ns0050.ply
+Mesh saved successfully
+SUCCESS: SPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_1000_pois_ps0001_ns0050.ply
+
+Attempting StochasticPSR reconstruction...
+Input points shape: (1000, 3), normals shape: (1000, 3)
+Running StochasticPSR with grid_res=80, box_size=1.5707963267948966
+Calling stochastic_poisson_surface_reconstruction...
+Stochastic reconstruction completed. Running marching cubes...
+Marching cubes completed. Vertices: (1752, 3), faces: (3496, 3)
+Time for StochasticPSR: 27.439 seconds
+
+Saving StochasticPSR result for sampled_1000_pois_ps0001_ns0050.ply
+Vertices: (1752, 3), Faces: (3496, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_1000_pois_ps0001_ns0050.ply
+Mesh saved successfully
+SUCCESS: StochasticPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_1000_pois_ps0001_ns0050.ply
+
+Attempting StochasticPSR_wOneSolve reconstruction...
+Input points shape: (1000, 3), normals shape: (1000, 3)
+Running StochasticPSR_wOneSolve with grid_res=80
+Creating interpolator: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████| 977/977 [00:22<00:00, 44.31it/s]
+Grid prepared with shape: (512000, 3)
+Computing implicit function...
+SDD: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:01<00:00, 751.61it/s]
+Computing mean: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.31it/s]
+SDD: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:01<00:00, 769.17it/s]
+Computing mean: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 16/16 [00:01<00:00, 12.31it/s]
+Implicit function computed. Shape: (512000,)
+Running marching cubes...
+Marching cubes completed. Vertices: (1614, 3), faces: (3224, 3)
+Time for StochasticPSR_wOneSolve: 26.900 seconds
+
+Saving StochasticPSR_wOneSolve result for sampled_1000_pois_ps0001_ns0050.ply
+Vertices: (1614, 3), Faces: (3224, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR_wOneSolve/sampled_1000_pois_ps0001_ns0050.ply
+Mesh saved successfully
+SUCCESS: StochasticPSR_wOneSolve -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR_wOneSolve/sampled_1000_pois_ps0001_ns0050.ply
+
+
+Processing file 3: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_1000_pois_ps0002_ns0100.ply
+Loaded 1000 points with normals
+
+Attempting PSR reconstruction...
+Input points shape: (1000, 3), normals shape: (1000, 3)
+Running PSR with screening_weight=1.0, depth=10
+First point: [ 0.169026 -0.204891 -0.218315], First normal: [ 0.280495 -0.770122 -0.572917]
+PSR completed. Output vertices: (2818, 3), faces: (5596, 3)
+Time for PSR: 0.624 seconds
+
+Saving PSR result for sampled_1000_pois_ps0002_ns0100.ply
+Vertices: (2818, 3), Faces: (5596, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_1000_pois_ps0002_ns0100.ply
+Mesh saved successfully
+SUCCESS: PSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_1000_pois_ps0002_ns0100.ply
+
+Attempting SPSR reconstruction...
+Input points shape: (1000, 3), normals shape: (1000, 3)
+Running SPSR with screening_weight=4.0, depth=10
+SPSR completed. Output vertices: (3262, 3), faces: (6552, 3)
+Time for SPSR: 0.624 seconds
+
+Saving SPSR result for sampled_1000_pois_ps0002_ns0100.ply
+Vertices: (3262, 3), Faces: (6552, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_1000_pois_ps0002_ns0100.ply
+Mesh saved successfully
+SUCCESS: SPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_1000_pois_ps0002_ns0100.ply
+
+Attempting StochasticPSR reconstruction...
+Input points shape: (1000, 3), normals shape: (1000, 3)
+Running StochasticPSR with grid_res=80, box_size=1.5707963267948966
+Calling stochastic_poisson_surface_reconstruction...
+Stochastic reconstruction completed. Running marching cubes...
+Marching cubes completed. Vertices: (1756, 3), faces: (3504, 3)
+Time for StochasticPSR: 23.756 seconds
+
+Saving StochasticPSR result for sampled_1000_pois_ps0002_ns0100.ply
+Vertices: (1756, 3), Faces: (3504, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_1000_pois_ps0002_ns0100.ply
+Mesh saved successfully
+SUCCESS: StochasticPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_1000_pois_ps0002_ns0100.ply
+
+Attempting StochasticPSR_wOneSolve reconstruction...
+Input points shape: (1000, 3), normals shape: (1000, 3)
+Running StochasticPSR_wOneSolve with grid_res=80
+Creating interpolator: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████| 977/977 [00:21<00:00, 45.90it/s]
+Grid prepared with shape: (512000, 3)
+Computing implicit function...
+SDD: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:01<00:00, 723.28it/s]
+Computing mean: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.34it/s]
+SDD: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:01<00:00, 789.45it/s]
+Computing mean: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 16/16 [00:01<00:00, 12.80it/s]
+Implicit function computed. Shape: (512000,)
+Running marching cubes...
+Marching cubes completed. Vertices: (1622, 3), faces: (3240, 3)
+Time for StochasticPSR_wOneSolve: 26.088 seconds
+
+Saving StochasticPSR_wOneSolve result for sampled_1000_pois_ps0002_ns0100.ply
+Vertices: (1622, 3), Faces: (3240, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR_wOneSolve/sampled_1000_pois_ps0002_ns0100.ply
+Mesh saved successfully
+SUCCESS: StochasticPSR_wOneSolve -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR_wOneSolve/sampled_1000_pois_ps0002_ns0100.ply
+
+
+Processing file 4: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_1000_unif_ps0000_ns0000.ply
+Loaded 1000 points with normals
+
+Attempting PSR reconstruction...
+Input points shape: (1000, 3), normals shape: (1000, 3)
+Running PSR with screening_weight=1.0, depth=10
+First point: [ 0.18414  -0.030437  0.305225], First normal: [-0.0178336  0.177216   0.98401  ]
+PSR completed. Output vertices: (3851, 3), faces: (7702, 3)
+Time for PSR: 0.624 seconds
+
+Saving PSR result for sampled_1000_unif_ps0000_ns0000.ply
+Vertices: (3851, 3), Faces: (7702, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_1000_unif_ps0000_ns0000.ply
+Mesh saved successfully
+SUCCESS: PSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_1000_unif_ps0000_ns0000.ply
+
+Attempting SPSR reconstruction...
+Input points shape: (1000, 3), normals shape: (1000, 3)
+Running SPSR with screening_weight=4.0, depth=10
+SPSR completed. Output vertices: (4068, 3), faces: (8144, 3)
+Time for SPSR: 0.623 seconds
+
+Saving SPSR result for sampled_1000_unif_ps0000_ns0000.ply
+Vertices: (4068, 3), Faces: (8144, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_1000_unif_ps0000_ns0000.ply
+Mesh saved successfully
+SUCCESS: SPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_1000_unif_ps0000_ns0000.ply
+
+Attempting StochasticPSR reconstruction...
+Input points shape: (1000, 3), normals shape: (1000, 3)
+Running StochasticPSR with grid_res=80, box_size=1.5707963267948966
+Calling stochastic_poisson_surface_reconstruction...
+Stochastic reconstruction completed. Running marching cubes...
+Marching cubes completed. Vertices: (1778, 3), faces: (3552, 3)
+Time for StochasticPSR: 25.213 seconds
+
+Saving StochasticPSR result for sampled_1000_unif_ps0000_ns0000.ply
+Vertices: (1778, 3), Faces: (3552, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_1000_unif_ps0000_ns0000.ply
+Mesh saved successfully
+SUCCESS: StochasticPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_1000_unif_ps0000_ns0000.ply
+
+Attempting StochasticPSR_wOneSolve reconstruction...
+Input points shape: (1000, 3), normals shape: (1000, 3)
+Running StochasticPSR_wOneSolve with grid_res=80
+Creating interpolator: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████| 977/977 [00:21<00:00, 44.42it/s]
+Grid prepared with shape: (512000, 3)
+Computing implicit function...
+SDD: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:01<00:00, 786.76it/s]
+Computing mean: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.34it/s]
+SDD: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:01<00:00, 782.88it/s]
+Computing mean: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 16/16 [00:01<00:00, 12.45it/s]
+Implicit function computed. Shape: (512000,)
+Running marching cubes...
+Marching cubes completed. Vertices: (1632, 3), faces: (3260, 3)
+Time for StochasticPSR_wOneSolve: 26.728 seconds
+
+Saving StochasticPSR_wOneSolve result for sampled_1000_unif_ps0000_ns0000.ply
+Vertices: (1632, 3), Faces: (3260, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR_wOneSolve/sampled_1000_unif_ps0000_ns0000.ply
+Mesh saved successfully
+SUCCESS: StochasticPSR_wOneSolve -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR_wOneSolve/sampled_1000_unif_ps0000_ns0000.ply
+
+
+Processing file 5: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_1000_unif_ps0001_ns0050.ply
+Loaded 1000 points with normals
+
+Attempting PSR reconstruction...
+Input points shape: (1000, 3), normals shape: (1000, 3)
+Running PSR with screening_weight=1.0, depth=10
+First point: [-0.170795  -0.0452428  0.140541 ], First normal: [ 0.0801477 -0.272165   0.958907 ]
+PSR completed. Output vertices: (3773, 3), faces: (7550, 3)
+Time for PSR: 0.665 seconds
+
+Saving PSR result for sampled_1000_unif_ps0001_ns0050.ply
+Vertices: (3773, 3), Faces: (7550, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_1000_unif_ps0001_ns0050.ply
+Mesh saved successfully
+SUCCESS: PSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_1000_unif_ps0001_ns0050.ply
+
+Attempting SPSR reconstruction...
+Input points shape: (1000, 3), normals shape: (1000, 3)
+Running SPSR with screening_weight=4.0, depth=10
+SPSR completed. Output vertices: (3987, 3), faces: (7970, 3)
+Time for SPSR: 0.664 seconds
+
+Saving SPSR result for sampled_1000_unif_ps0001_ns0050.ply
+Vertices: (3987, 3), Faces: (7970, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_1000_unif_ps0001_ns0050.ply
+Mesh saved successfully
+SUCCESS: SPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_1000_unif_ps0001_ns0050.ply
+
+Attempting StochasticPSR reconstruction...
+Input points shape: (1000, 3), normals shape: (1000, 3)
+Running StochasticPSR with grid_res=80, box_size=1.5707963267948966
+Calling stochastic_poisson_surface_reconstruction...
+Stochastic reconstruction completed. Running marching cubes...
+Marching cubes completed. Vertices: (1732, 3), faces: (3456, 3)
+Time for StochasticPSR: 23.212 seconds
+
+Saving StochasticPSR result for sampled_1000_unif_ps0001_ns0050.ply
+Vertices: (1732, 3), Faces: (3456, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_1000_unif_ps0001_ns0050.ply
+Mesh saved successfully
+SUCCESS: StochasticPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_1000_unif_ps0001_ns0050.ply
+
+Attempting StochasticPSR_wOneSolve reconstruction...
+Input points shape: (1000, 3), normals shape: (1000, 3)
+Running StochasticPSR_wOneSolve with grid_res=80
+Creating interpolator: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████| 977/977 [00:22<00:00, 44.19it/s]
+Grid prepared with shape: (512000, 3)
+Computing implicit function...
+SDD: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:01<00:00, 802.60it/s]
+Computing mean: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.39it/s]
+SDD: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:01<00:00, 766.20it/s]
+Computing mean: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 16/16 [00:01<00:00, 11.52it/s]
+Implicit function computed. Shape: (512000,)
+Running marching cubes...
+Marching cubes completed. Vertices: (1628, 3), faces: (3252, 3)
+Time for StochasticPSR_wOneSolve: 26.939 seconds
+
+Saving StochasticPSR_wOneSolve result for sampled_1000_unif_ps0001_ns0050.ply
+Vertices: (1628, 3), Faces: (3252, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR_wOneSolve/sampled_1000_unif_ps0001_ns0050.ply
+Mesh saved successfully
+SUCCESS: StochasticPSR_wOneSolve -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR_wOneSolve/sampled_1000_unif_ps0001_ns0050.ply
+
+
+Processing file 6: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_1000_unif_ps0002_ns0100.ply
+Loaded 1000 points with normals
+
+Attempting PSR reconstruction...
+Input points shape: (1000, 3), normals shape: (1000, 3)
+Running PSR with screening_weight=1.0, depth=10
+First point: [-0.0981277  0.291108  -0.223977 ], First normal: [-0.162049  0.967868 -0.192281]
+PSR completed. Output vertices: (3788, 3), faces: (7580, 3)
+Time for PSR: 0.664 seconds
+
+Saving PSR result for sampled_1000_unif_ps0002_ns0100.ply
+Vertices: (3788, 3), Faces: (7580, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_1000_unif_ps0002_ns0100.ply
+Mesh saved successfully
+SUCCESS: PSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_1000_unif_ps0002_ns0100.ply
+
+Attempting SPSR reconstruction...
+Input points shape: (1000, 3), normals shape: (1000, 3)
+Running SPSR with screening_weight=4.0, depth=10
+SPSR completed. Output vertices: (4047, 3), faces: (8106, 3)
+Time for SPSR: 0.644 seconds
+
+Saving SPSR result for sampled_1000_unif_ps0002_ns0100.ply
+Vertices: (4047, 3), Faces: (8106, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_1000_unif_ps0002_ns0100.ply
+Mesh saved successfully
+SUCCESS: SPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_1000_unif_ps0002_ns0100.ply
+
+Attempting StochasticPSR reconstruction...
+Input points shape: (1000, 3), normals shape: (1000, 3)
+Running StochasticPSR with grid_res=80, box_size=1.5707963267948966
+Calling stochastic_poisson_surface_reconstruction...
+Stochastic reconstruction completed. Running marching cubes...
+Marching cubes completed. Vertices: (1788, 3), faces: (3572, 3)
+Time for StochasticPSR: 30.049 seconds
+
+Saving StochasticPSR result for sampled_1000_unif_ps0002_ns0100.ply
+Vertices: (1788, 3), Faces: (3572, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_1000_unif_ps0002_ns0100.ply
+Mesh saved successfully
+SUCCESS: StochasticPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_1000_unif_ps0002_ns0100.ply
+
+Attempting StochasticPSR_wOneSolve reconstruction...
+Input points shape: (1000, 3), normals shape: (1000, 3)
+Running StochasticPSR_wOneSolve with grid_res=80
+Creating interpolator: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████| 977/977 [00:22<00:00, 43.73it/s]
+Grid prepared with shape: (512000, 3)
+Computing implicit function...
+SDD: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:01<00:00, 809.00it/s]
+Computing mean: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.39it/s]
+SDD: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:01<00:00, 788.73it/s]
+Computing mean: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 16/16 [00:01<00:00, 12.31it/s]
+Implicit function computed. Shape: (512000,)
+Running marching cubes...
+Marching cubes completed. Vertices: (1660, 3), faces: (3316, 3)
+Time for StochasticPSR_wOneSolve: 27.040 seconds
+
+Saving StochasticPSR_wOneSolve result for sampled_1000_unif_ps0002_ns0100.ply
+Vertices: (1660, 3), Faces: (3316, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR_wOneSolve/sampled_1000_unif_ps0002_ns0100.ply
+Mesh saved successfully
+SUCCESS: StochasticPSR_wOneSolve -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR_wOneSolve/sampled_1000_unif_ps0002_ns0100.ply
+
+
+Processing file 7: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_100_pois_ps0000_ns0000.ply
+Loaded 100 points with normals
+
+Attempting PSR reconstruction...
+Input points shape: (100, 3), normals shape: (100, 3)
+Running PSR with screening_weight=1.0, depth=10
+First point: [-0.365046  -0.0581299  0.0361626], First normal: [ 0.0858885 -0.205154   0.974954 ]
+PSR completed. Output vertices: (258, 3), faces: (512, 3)
+Time for PSR: 0.583 seconds
+
+Saving PSR result for sampled_100_pois_ps0000_ns0000.ply
+Vertices: (258, 3), Faces: (512, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_100_pois_ps0000_ns0000.ply
+Mesh saved successfully
+SUCCESS: PSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_100_pois_ps0000_ns0000.ply
+
+Attempting SPSR reconstruction...
+Input points shape: (100, 3), normals shape: (100, 3)
+Running SPSR with screening_weight=4.0, depth=10
+SPSR completed. Output vertices: (278, 3), faces: (548, 3)
+Time for SPSR: 0.583 seconds
+
+Saving SPSR result for sampled_100_pois_ps0000_ns0000.ply
+Vertices: (278, 3), Faces: (548, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_100_pois_ps0000_ns0000.ply
+Mesh saved successfully
+SUCCESS: SPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_100_pois_ps0000_ns0000.ply
+
+Attempting StochasticPSR reconstruction...
+Input points shape: (100, 3), normals shape: (100, 3)
+Running StochasticPSR with grid_res=80, box_size=1.5707963267948966
+Calling stochastic_poisson_surface_reconstruction...
+Stochastic reconstruction completed. Running marching cubes...
+Marching cubes completed. Vertices: (2018, 3), faces: (4032, 3)
+Time for StochasticPSR: 25.279 seconds
+
+Saving StochasticPSR result for sampled_100_pois_ps0000_ns0000.ply
+Vertices: (2018, 3), Faces: (4032, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_100_pois_ps0000_ns0000.ply
+Mesh saved successfully
+SUCCESS: StochasticPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_100_pois_ps0000_ns0000.ply
+
+Attempting StochasticPSR_wOneSolve reconstruction...
+Input points shape: (100, 3), normals shape: (100, 3)
+Running StochasticPSR_wOneSolve with grid_res=80
+Creating interpolator: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████| 977/977 [00:19<00:00, 49.22it/s]
+Grid prepared with shape: (512000, 3)
+Computing implicit function...
+SDD:   0%|                                                                                                                                         | 0/1000 [00:00<?, ?it/s]
+Failed to compute implicit function: Cannot take a larger sample (size 128) than population (size 100) when 'replace=False'
+FAILED StochasticPSR_wOneSolve: Cannot take a larger sample (size 128) than population (size 100) when 'replace=False'
+
+
+Processing file 8: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_100_pois_ps0001_ns0050.ply
+Loaded 100 points with normals
+
+Attempting PSR reconstruction...
+Input points shape: (100, 3), normals shape: (100, 3)
+Running PSR with screening_weight=1.0, depth=10
+First point: [-0.123217  -0.183415   0.0247147], First normal: [-0.964781  -0.261465   0.0288764]
+PSR completed. Output vertices: (238, 3), faces: (472, 3)
+Time for PSR: 0.563 seconds
+
+Saving PSR result for sampled_100_pois_ps0001_ns0050.ply
+Vertices: (238, 3), Faces: (472, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_100_pois_ps0001_ns0050.ply
+Mesh saved successfully
+SUCCESS: PSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_100_pois_ps0001_ns0050.ply
+
+Attempting SPSR reconstruction...
+Input points shape: (100, 3), normals shape: (100, 3)
+Running SPSR with screening_weight=4.0, depth=10
+SPSR completed. Output vertices: (247, 3), faces: (490, 3)
+Time for SPSR: 0.604 seconds
+
+Saving SPSR result for sampled_100_pois_ps0001_ns0050.ply
+Vertices: (247, 3), Faces: (490, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_100_pois_ps0001_ns0050.ply
+Mesh saved successfully
+SUCCESS: SPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_100_pois_ps0001_ns0050.ply
+
+Attempting StochasticPSR reconstruction...
+Input points shape: (100, 3), normals shape: (100, 3)
+Running StochasticPSR with grid_res=80, box_size=1.5707963267948966
+Calling stochastic_poisson_surface_reconstruction...
+Stochastic reconstruction completed. Running marching cubes...
+Marching cubes completed. Vertices: (1900, 3), faces: (3792, 3)
+Time for StochasticPSR: 28.943 seconds
+
+Saving StochasticPSR result for sampled_100_pois_ps0001_ns0050.ply
+Vertices: (1900, 3), Faces: (3792, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_100_pois_ps0001_ns0050.ply
+Mesh saved successfully
+SUCCESS: StochasticPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_100_pois_ps0001_ns0050.ply
+
+Attempting StochasticPSR_wOneSolve reconstruction...
+Input points shape: (100, 3), normals shape: (100, 3)
+Running StochasticPSR_wOneSolve with grid_res=80
+Creating interpolator: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████| 977/977 [00:22<00:00, 43.08it/s]
+Grid prepared with shape: (512000, 3)
+Computing implicit function...
+SDD:   0%|                                                                                                                                         | 0/1000 [00:00<?, ?it/s]
+Failed to compute implicit function: Cannot take a larger sample (size 128) than population (size 100) when 'replace=False'
+FAILED StochasticPSR_wOneSolve: Cannot take a larger sample (size 128) than population (size 100) when 'replace=False'
+
+
+Processing file 9: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_100_pois_ps0002_ns0100.ply
+Loaded 100 points with normals
+
+Attempting PSR reconstruction...
+Input points shape: (100, 3), normals shape: (100, 3)
+Running PSR with screening_weight=1.0, depth=10
+First point: [-0.124943 -0.167528  0.125653], First normal: [-0.944203 -0.32745   0.035465]
+PSR completed. Output vertices: (254, 3), faces: (504, 3)
+Time for PSR: 0.583 seconds
+
+Saving PSR result for sampled_100_pois_ps0002_ns0100.ply
+Vertices: (254, 3), Faces: (504, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_100_pois_ps0002_ns0100.ply
+Mesh saved successfully
+SUCCESS: PSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_100_pois_ps0002_ns0100.ply
+
+Attempting SPSR reconstruction...
+Input points shape: (100, 3), normals shape: (100, 3)
+Running SPSR with screening_weight=4.0, depth=10
+SPSR completed. Output vertices: (273, 3), faces: (538, 3)
+Time for SPSR: 0.563 seconds
+
+Saving SPSR result for sampled_100_pois_ps0002_ns0100.ply
+Vertices: (273, 3), Faces: (538, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_100_pois_ps0002_ns0100.ply
+Mesh saved successfully
+SUCCESS: SPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_100_pois_ps0002_ns0100.ply
+
+Attempting StochasticPSR reconstruction...
+Input points shape: (100, 3), normals shape: (100, 3)
+Running StochasticPSR with grid_res=80, box_size=1.5707963267948966
+Calling stochastic_poisson_surface_reconstruction...
+Stochastic reconstruction completed. Running marching cubes...
+Marching cubes completed. Vertices: (1930, 3), faces: (3856, 3)
+Time for StochasticPSR: 24.716 seconds
+
+Saving StochasticPSR result for sampled_100_pois_ps0002_ns0100.ply
+Vertices: (1930, 3), Faces: (3856, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_100_pois_ps0002_ns0100.ply
+Mesh saved successfully
+SUCCESS: StochasticPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_100_pois_ps0002_ns0100.ply
+
+Attempting StochasticPSR_wOneSolve reconstruction...
+Input points shape: (100, 3), normals shape: (100, 3)
+Running StochasticPSR_wOneSolve with grid_res=80
+Creating interpolator: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████| 977/977 [00:22<00:00, 43.21it/s]
+Grid prepared with shape: (512000, 3)
+Computing implicit function...
+SDD:   0%|                                                                                                                                         | 0/1000 [00:00<?, ?it/s]
+Failed to compute implicit function: Cannot take a larger sample (size 128) than population (size 100) when 'replace=False'
+FAILED StochasticPSR_wOneSolve: Cannot take a larger sample (size 128) than population (size 100) when 'replace=False'
+
+
+Processing file 10: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_100_unif_ps0000_ns0000.ply
+Loaded 100 points with normals
+
+Attempting PSR reconstruction...
+Input points shape: (100, 3), normals shape: (100, 3)
+Running PSR with screening_weight=1.0, depth=10
+First point: [ 0.538381  -0.147492   0.0476247], First normal: [ 0.964516   0.26234   -0.0297661]
+PSR completed. Output vertices: (326, 3), faces: (648, 3)
+Time for PSR: 0.786 seconds
+
+Saving PSR result for sampled_100_unif_ps0000_ns0000.ply
+Vertices: (326, 3), Faces: (648, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_100_unif_ps0000_ns0000.ply
+Mesh saved successfully
+SUCCESS: PSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_100_unif_ps0000_ns0000.ply
+
+Attempting SPSR reconstruction...
+Input points shape: (100, 3), normals shape: (100, 3)
+Running SPSR with screening_weight=4.0, depth=10
+SPSR completed. Output vertices: (333, 3), faces: (662, 3)
+Time for SPSR: 0.665 seconds
+
+Saving SPSR result for sampled_100_unif_ps0000_ns0000.ply
+Vertices: (333, 3), Faces: (662, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_100_unif_ps0000_ns0000.ply
+Mesh saved successfully
+SUCCESS: SPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_100_unif_ps0000_ns0000.ply
+
+Attempting StochasticPSR reconstruction...
+Input points shape: (100, 3), normals shape: (100, 3)
+Running StochasticPSR with grid_res=80, box_size=1.5707963267948966
+Calling stochastic_poisson_surface_reconstruction...
+Stochastic reconstruction completed. Running marching cubes...
+Marching cubes completed. Vertices: (1984, 3), faces: (3956, 3)
+Time for StochasticPSR: 24.633 seconds
+
+Saving StochasticPSR result for sampled_100_unif_ps0000_ns0000.ply
+Vertices: (1984, 3), Faces: (3956, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_100_unif_ps0000_ns0000.ply
+Mesh saved successfully
+SUCCESS: StochasticPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_100_unif_ps0000_ns0000.ply
+
+Attempting StochasticPSR_wOneSolve reconstruction...
+Input points shape: (100, 3), normals shape: (100, 3)
+Running StochasticPSR_wOneSolve with grid_res=80
+Creating interpolator: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████| 977/977 [00:19<00:00, 50.26it/s]
+Grid prepared with shape: (512000, 3)
+Computing implicit function...
+SDD:   0%|                                                                                                                                         | 0/1000 [00:00<?, ?it/s]
+Failed to compute implicit function: Cannot take a larger sample (size 128) than population (size 100) when 'replace=False'
+FAILED StochasticPSR_wOneSolve: Cannot take a larger sample (size 128) than population (size 100) when 'replace=False'
+
+
+Processing file 11: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_100_unif_ps0001_ns0050.ply
+Loaded 100 points with normals
+
+Attempting PSR reconstruction...
+Input points shape: (100, 3), normals shape: (100, 3)
+Running PSR with screening_weight=1.0, depth=10
+First point: [-0.00519615 -0.255262    0.00522983], First normal: [ 0.213233 -0.955745  0.202692]
+PSR completed. Output vertices: (428, 3), faces: (852, 3)
+Time for PSR: 0.603 seconds
+
+Saving PSR result for sampled_100_unif_ps0001_ns0050.ply
+Vertices: (428, 3), Faces: (852, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_100_unif_ps0001_ns0050.ply
+Mesh saved successfully
+SUCCESS: PSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_100_unif_ps0001_ns0050.ply
+
+Attempting SPSR reconstruction...
+Input points shape: (100, 3), normals shape: (100, 3)
+Running SPSR with screening_weight=4.0, depth=10
+SPSR completed. Output vertices: (465, 3), faces: (926, 3)
+Time for SPSR: 0.604 seconds
+
+Saving SPSR result for sampled_100_unif_ps0001_ns0050.ply
+Vertices: (465, 3), Faces: (926, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_100_unif_ps0001_ns0050.ply
+Mesh saved successfully
+SUCCESS: SPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_100_unif_ps0001_ns0050.ply
+
+Attempting StochasticPSR reconstruction...
+Input points shape: (100, 3), normals shape: (100, 3)
+Running StochasticPSR with grid_res=80, box_size=1.5707963267948966
+Calling stochastic_poisson_surface_reconstruction...
+Stochastic reconstruction completed. Running marching cubes...
+Marching cubes completed. Vertices: (1898, 3), faces: (3792, 3)
+Time for StochasticPSR: 29.225 seconds
+
+Saving StochasticPSR result for sampled_100_unif_ps0001_ns0050.ply
+Vertices: (1898, 3), Faces: (3792, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_100_unif_ps0001_ns0050.ply
+Mesh saved successfully
+SUCCESS: StochasticPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_100_unif_ps0001_ns0050.ply
+
+Attempting StochasticPSR_wOneSolve reconstruction...
+Input points shape: (100, 3), normals shape: (100, 3)
+Running StochasticPSR_wOneSolve with grid_res=80
+Creating interpolator: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████| 977/977 [00:22<00:00, 43.56it/s]
+Grid prepared with shape: (512000, 3)
+Computing implicit function...
+SDD:   0%|                                                                                                                                         | 0/1000 [00:00<?, ?it/s]
+Failed to compute implicit function: Cannot take a larger sample (size 128) than population (size 100) when 'replace=False'
+FAILED StochasticPSR_wOneSolve: Cannot take a larger sample (size 128) than population (size 100) when 'replace=False'
+
+
+Processing file 12: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_100_unif_ps0002_ns0100.ply
+Loaded 100 points with normals
+
+Attempting PSR reconstruction...
+Input points shape: (100, 3), normals shape: (100, 3)
+Running PSR with screening_weight=1.0, depth=10
+First point: [0.493535  0.097403  0.0199539], First normal: [ 0.997087   0.0744243 -0.0166812]
+PSR completed. Output vertices: (472, 3), faces: (940, 3)
+Time for PSR: 0.685 seconds
+
+Saving PSR result for sampled_100_unif_ps0002_ns0100.ply
+Vertices: (472, 3), Faces: (940, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_100_unif_ps0002_ns0100.ply
+Mesh saved successfully
+SUCCESS: PSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_100_unif_ps0002_ns0100.ply
+
+Attempting SPSR reconstruction...
+Input points shape: (100, 3), normals shape: (100, 3)
+Running SPSR with screening_weight=4.0, depth=10
+SPSR completed. Output vertices: (496, 3), faces: (984, 3)
+Time for SPSR: 0.725 seconds
+
+Saving SPSR result for sampled_100_unif_ps0002_ns0100.ply
+Vertices: (496, 3), Faces: (984, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_100_unif_ps0002_ns0100.ply
+Mesh saved successfully
+SUCCESS: SPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_100_unif_ps0002_ns0100.ply
+
+Attempting StochasticPSR reconstruction...
+Input points shape: (100, 3), normals shape: (100, 3)
+Running StochasticPSR with grid_res=80, box_size=1.5707963267948966
+Calling stochastic_poisson_surface_reconstruction...
+Stochastic reconstruction completed. Running marching cubes...
+Marching cubes completed. Vertices: (1916, 3), faces: (3824, 3)
+Time for StochasticPSR: 32.187 seconds
+
+Saving StochasticPSR result for sampled_100_unif_ps0002_ns0100.ply
+Vertices: (1916, 3), Faces: (3824, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_100_unif_ps0002_ns0100.ply
+Mesh saved successfully
+SUCCESS: StochasticPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_100_unif_ps0002_ns0100.ply
+
+Attempting StochasticPSR_wOneSolve reconstruction...
+Input points shape: (100, 3), normals shape: (100, 3)
+Running StochasticPSR_wOneSolve with grid_res=80
+Creating interpolator: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████| 977/977 [00:20<00:00, 48.34it/s]
+Grid prepared with shape: (512000, 3)
+Computing implicit function...
+SDD:   0%|                                                                                                                                         | 0/1000 [00:00<?, ?it/s]
+Failed to compute implicit function: Cannot take a larger sample (size 128) than population (size 100) when 'replace=False'
+FAILED StochasticPSR_wOneSolve: Cannot take a larger sample (size 128) than population (size 100) when 'replace=False'
+
+
+Processing file 13: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_500_pois_ps0000_ns0000.ply
+Loaded 500 points with normals
+
+Attempting PSR reconstruction...
+Input points shape: (500, 3), normals shape: (500, 3)
+Running PSR with screening_weight=1.0, depth=10
+First point: [ 0.460285  0.186856 -0.236098], First normal: [ 0.964515   0.262349  -0.0297312]
+PSR completed. Output vertices: (998, 3), faces: (1988, 3)
+Time for PSR: 0.705 seconds
+
+Saving PSR result for sampled_500_pois_ps0000_ns0000.ply
+Vertices: (998, 3), Faces: (1988, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_500_pois_ps0000_ns0000.ply
+Mesh saved successfully
+SUCCESS: PSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_500_pois_ps0000_ns0000.ply
+
+Attempting SPSR reconstruction...
+Input points shape: (500, 3), normals shape: (500, 3)
+Running SPSR with screening_weight=4.0, depth=10
+SPSR completed. Output vertices: (1051, 3), faces: (2098, 3)
+Time for SPSR: 0.645 seconds
+
+Saving SPSR result for sampled_500_pois_ps0000_ns0000.ply
+Vertices: (1051, 3), Faces: (2098, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_500_pois_ps0000_ns0000.ply
+Mesh saved successfully
+SUCCESS: SPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_500_pois_ps0000_ns0000.ply
+
+Attempting StochasticPSR reconstruction...
+Input points shape: (500, 3), normals shape: (500, 3)
+Running StochasticPSR with grid_res=80, box_size=1.5707963267948966
+Calling stochastic_poisson_surface_reconstruction...
+Stochastic reconstruction completed. Running marching cubes...
+Marching cubes completed. Vertices: (1756, 3), faces: (3508, 3)
+Time for StochasticPSR: 24.904 seconds
+
+Saving StochasticPSR result for sampled_500_pois_ps0000_ns0000.ply
+Vertices: (1756, 3), Faces: (3508, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_500_pois_ps0000_ns0000.ply
+Mesh saved successfully
+SUCCESS: StochasticPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_500_pois_ps0000_ns0000.ply
+
+Attempting StochasticPSR_wOneSolve reconstruction...
+Input points shape: (500, 3), normals shape: (500, 3)
+Running StochasticPSR_wOneSolve with grid_res=80
+Creating interpolator: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████| 977/977 [00:22<00:00, 43.70it/s]
+Grid prepared with shape: (512000, 3)
+Computing implicit function...
+SDD: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:01<00:00, 630.82it/s]
+Computing mean: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.04it/s]
+SDD: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:01<00:00, 863.73it/s]
+Computing mean: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 16/16 [00:01<00:00, 12.69it/s]
+Implicit function computed. Shape: (512000,)
+Running marching cubes...
+Marching cubes completed. Vertices: (1616, 3), faces: (3228, 3)
+Time for StochasticPSR_wOneSolve: 27.560 seconds
+
+Saving StochasticPSR_wOneSolve result for sampled_500_pois_ps0000_ns0000.ply
+Vertices: (1616, 3), Faces: (3228, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR_wOneSolve/sampled_500_pois_ps0000_ns0000.ply
+Mesh saved successfully
+SUCCESS: StochasticPSR_wOneSolve -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR_wOneSolve/sampled_500_pois_ps0000_ns0000.ply
+
+
+Processing file 14: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_500_pois_ps0001_ns0050.ply
+Loaded 500 points with normals
+
+Attempting PSR reconstruction...
+Input points shape: (500, 3), normals shape: (500, 3)
+Running PSR with screening_weight=1.0, depth=10
+First point: [0.175842 0.247288 0.254264], First normal: [-0.0291278  0.223199   0.974338 ]
+PSR completed. Output vertices: (1008, 3), faces: (2008, 3)
+Time for PSR: 0.624 seconds
+
+Saving PSR result for sampled_500_pois_ps0001_ns0050.ply
+Vertices: (1008, 3), Faces: (2008, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_500_pois_ps0001_ns0050.ply
+Mesh saved successfully
+SUCCESS: PSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_500_pois_ps0001_ns0050.ply
+
+Attempting SPSR reconstruction...
+Input points shape: (500, 3), normals shape: (500, 3)
+Running SPSR with screening_weight=4.0, depth=10
+SPSR completed. Output vertices: (1046, 3), faces: (2084, 3)
+Time for SPSR: 0.583 seconds
+
+Saving SPSR result for sampled_500_pois_ps0001_ns0050.ply
+Vertices: (1046, 3), Faces: (2084, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_500_pois_ps0001_ns0050.ply
+Mesh saved successfully
+SUCCESS: SPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_500_pois_ps0001_ns0050.ply
+
+Attempting StochasticPSR reconstruction...
+Input points shape: (500, 3), normals shape: (500, 3)
+Running StochasticPSR with grid_res=80, box_size=1.5707963267948966
+Calling stochastic_poisson_surface_reconstruction...
+Stochastic reconstruction completed. Running marching cubes...
+Marching cubes completed. Vertices: (1716, 3), faces: (3424, 3)
+Time for StochasticPSR: 26.540 seconds
+
+Saving StochasticPSR result for sampled_500_pois_ps0001_ns0050.ply
+Vertices: (1716, 3), Faces: (3424, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_500_pois_ps0001_ns0050.ply
+Mesh saved successfully
+SUCCESS: StochasticPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_500_pois_ps0001_ns0050.ply
+
+Attempting StochasticPSR_wOneSolve reconstruction...
+Input points shape: (500, 3), normals shape: (500, 3)
+Running StochasticPSR_wOneSolve with grid_res=80
+Creating interpolator: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████| 977/977 [00:19<00:00, 49.85it/s]
+Grid prepared with shape: (512000, 3)
+Computing implicit function...
+SDD: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:01<00:00, 840.24it/s]
+Computing mean: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.05it/s]
+SDD: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:01<00:00, 820.83it/s]
+Computing mean: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 16/16 [00:01<00:00, 13.26it/s]
+Implicit function computed. Shape: (512000,)
+Running marching cubes...
+Marching cubes completed. Vertices: (1616, 3), faces: (3228, 3)
+Time for StochasticPSR_wOneSolve: 24.336 seconds
+
+Saving StochasticPSR_wOneSolve result for sampled_500_pois_ps0001_ns0050.ply
+Vertices: (1616, 3), Faces: (3228, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR_wOneSolve/sampled_500_pois_ps0001_ns0050.ply
+Mesh saved successfully
+SUCCESS: StochasticPSR_wOneSolve -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR_wOneSolve/sampled_500_pois_ps0001_ns0050.ply
+
+
+Processing file 15: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_500_pois_ps0002_ns0100.ply
+Loaded 500 points with normals
+
+Attempting PSR reconstruction...
+Input points shape: (500, 3), normals shape: (500, 3)
+Running PSR with screening_weight=1.0, depth=10
+First point: [ 0.439215   0.286059  -0.0386492], First normal: [ 0.938597  0.295668 -0.17781 ]
+PSR completed. Output vertices: (992, 3), faces: (1976, 3)
+Time for PSR: 0.584 seconds
+
+Saving PSR result for sampled_500_pois_ps0002_ns0100.ply
+Vertices: (992, 3), Faces: (1976, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_500_pois_ps0002_ns0100.ply
+Mesh saved successfully
+SUCCESS: PSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_500_pois_ps0002_ns0100.ply
+
+Attempting SPSR reconstruction...
+Input points shape: (500, 3), normals shape: (500, 3)
+Running SPSR with screening_weight=4.0, depth=10
+SPSR completed. Output vertices: (1065, 3), faces: (2126, 3)
+Time for SPSR: 0.583 seconds
+
+Saving SPSR result for sampled_500_pois_ps0002_ns0100.ply
+Vertices: (1065, 3), Faces: (2126, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_500_pois_ps0002_ns0100.ply
+Mesh saved successfully
+SUCCESS: SPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_500_pois_ps0002_ns0100.ply
+
+Attempting StochasticPSR reconstruction...
+Input points shape: (500, 3), normals shape: (500, 3)
+Running StochasticPSR with grid_res=80, box_size=1.5707963267948966
+Calling stochastic_poisson_surface_reconstruction...
+Stochastic reconstruction completed. Running marching cubes...
+Marching cubes completed. Vertices: (1742, 3), faces: (3476, 3)
+Time for StochasticPSR: 25.738 seconds
+
+Saving StochasticPSR result for sampled_500_pois_ps0002_ns0100.ply
+Vertices: (1742, 3), Faces: (3476, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_500_pois_ps0002_ns0100.ply
+Mesh saved successfully
+SUCCESS: StochasticPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_500_pois_ps0002_ns0100.ply
+
+Attempting StochasticPSR_wOneSolve reconstruction...
+Input points shape: (500, 3), normals shape: (500, 3)
+Running StochasticPSR_wOneSolve with grid_res=80
+Creating interpolator: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████| 977/977 [00:22<00:00, 43.78it/s]
+Grid prepared with shape: (512000, 3)
+Computing implicit function...
+SDD: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:01<00:00, 707.29it/s]
+Computing mean: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.05it/s]
+SDD: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:01<00:00, 722.42it/s]
+Computing mean: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 16/16 [00:01<00:00, 12.64it/s]
+Implicit function computed. Shape: (512000,)
+Running marching cubes...
+Marching cubes completed. Vertices: (1624, 3), faces: (3244, 3)
+Time for StochasticPSR_wOneSolve: 27.498 seconds
+
+Saving StochasticPSR_wOneSolve result for sampled_500_pois_ps0002_ns0100.ply
+Vertices: (1624, 3), Faces: (3244, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR_wOneSolve/sampled_500_pois_ps0002_ns0100.ply
+Mesh saved successfully
+SUCCESS: StochasticPSR_wOneSolve -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR_wOneSolve/sampled_500_pois_ps0002_ns0100.ply
+
+
+Processing file 16: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_500_unif_ps0000_ns0000.ply
+Loaded 500 points with normals
+
+Attempting PSR reconstruction...
+Input points shape: (500, 3), normals shape: (500, 3)
+Running PSR with screening_weight=1.0, depth=10
+First point: [ 0.286974  0.14865  -0.317976], First normal: [ 0.0178337 -0.177216  -0.98401  ]
+PSR completed. Output vertices: (1511, 3), faces: (3010, 3)
+Time for PSR: 0.624 seconds
+
+Saving PSR result for sampled_500_unif_ps0000_ns0000.ply
+Vertices: (1511, 3), Faces: (3010, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_500_unif_ps0000_ns0000.ply
+Mesh saved successfully
+SUCCESS: PSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_500_unif_ps0000_ns0000.ply
+
+Attempting SPSR reconstruction...
+Input points shape: (500, 3), normals shape: (500, 3)
+Running SPSR with screening_weight=4.0, depth=10
+SPSR completed. Output vertices: (1607, 3), faces: (3198, 3)
+Time for SPSR: 0.644 seconds
+
+Saving SPSR result for sampled_500_unif_ps0000_ns0000.ply
+Vertices: (1607, 3), Faces: (3198, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_500_unif_ps0000_ns0000.ply
+Mesh saved successfully
+SUCCESS: SPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_500_unif_ps0000_ns0000.ply
+
+Attempting StochasticPSR reconstruction...
+Input points shape: (500, 3), normals shape: (500, 3)
+Running StochasticPSR with grid_res=80, box_size=1.5707963267948966
+Calling stochastic_poisson_surface_reconstruction...
+Stochastic reconstruction completed. Running marching cubes...
+Marching cubes completed. Vertices: (1788, 3), faces: (3568, 3)
+Time for StochasticPSR: 27.535 seconds
+
+Saving StochasticPSR result for sampled_500_unif_ps0000_ns0000.ply
+Vertices: (1788, 3), Faces: (3568, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_500_unif_ps0000_ns0000.ply
+Mesh saved successfully
+SUCCESS: StochasticPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_500_unif_ps0000_ns0000.ply
+
+Attempting StochasticPSR_wOneSolve reconstruction...
+Input points shape: (500, 3), normals shape: (500, 3)
+Running StochasticPSR_wOneSolve with grid_res=80
+Creating interpolator: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████| 977/977 [00:19<00:00, 50.77it/s]
+Grid prepared with shape: (512000, 3)
+Computing implicit function...
+SDD: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:01<00:00, 838.97it/s]
+Computing mean: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.04it/s]
+SDD: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:01<00:00, 823.35it/s]
+Computing mean: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 16/16 [00:04<00:00,  3.64it/s]
+Implicit function computed. Shape: (512000,)
+Running marching cubes...
+Marching cubes completed. Vertices: (1672, 3), faces: (3340, 3)
+Time for StochasticPSR_wOneSolve: 27.163 seconds
+
+Saving StochasticPSR_wOneSolve result for sampled_500_unif_ps0000_ns0000.ply
+Vertices: (1672, 3), Faces: (3340, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR_wOneSolve/sampled_500_unif_ps0000_ns0000.ply
+Mesh saved successfully
+SUCCESS: StochasticPSR_wOneSolve -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR_wOneSolve/sampled_500_unif_ps0000_ns0000.ply
+
+
+Processing file 17: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_500_unif_ps0001_ns0050.ply
+Loaded 500 points with normals
+
+Attempting PSR reconstruction...
+Input points shape: (500, 3), normals shape: (500, 3)
+Running PSR with screening_weight=1.0, depth=10
+First point: [0.44483  0.275374 0.10171 ], First normal: [ 0.962701   0.265834  -0.0503948]
+PSR completed. Output vertices: (1624, 3), faces: (3236, 3)
+Time for PSR: 0.604 seconds
+
+Saving PSR result for sampled_500_unif_ps0001_ns0050.ply
+Vertices: (1624, 3), Faces: (3236, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_500_unif_ps0001_ns0050.ply
+Mesh saved successfully
+SUCCESS: PSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_500_unif_ps0001_ns0050.ply
+
+Attempting SPSR reconstruction...
+Input points shape: (500, 3), normals shape: (500, 3)
+Running SPSR with screening_weight=4.0, depth=10
+SPSR completed. Output vertices: (1754, 3), faces: (3500, 3)
+Time for SPSR: 0.624 seconds
+
+Saving SPSR result for sampled_500_unif_ps0001_ns0050.ply
+Vertices: (1754, 3), Faces: (3500, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_500_unif_ps0001_ns0050.ply
+Mesh saved successfully
+SUCCESS: SPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_500_unif_ps0001_ns0050.ply
+
+Attempting StochasticPSR reconstruction...
+Input points shape: (500, 3), normals shape: (500, 3)
+Running StochasticPSR with grid_res=80, box_size=1.5707963267948966
+Calling stochastic_poisson_surface_reconstruction...
+Stochastic reconstruction completed. Running marching cubes...
+Marching cubes completed. Vertices: (1774, 3), faces: (3544, 3)
+Time for StochasticPSR: 22.896 seconds
+
+Saving StochasticPSR result for sampled_500_unif_ps0001_ns0050.ply
+Vertices: (1774, 3), Faces: (3544, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_500_unif_ps0001_ns0050.ply
+Mesh saved successfully
+SUCCESS: StochasticPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_500_unif_ps0001_ns0050.ply
+
+Attempting StochasticPSR_wOneSolve reconstruction...
+Input points shape: (500, 3), normals shape: (500, 3)
+Running StochasticPSR_wOneSolve with grid_res=80
+Creating interpolator: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████| 977/977 [00:23<00:00, 42.33it/s]
+Grid prepared with shape: (512000, 3)
+Computing implicit function...
+SDD: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:01<00:00, 797.89it/s]
+Computing mean: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.05it/s]
+SDD: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:01<00:00, 859.30it/s]
+Computing mean: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 16/16 [00:01<00:00, 13.35it/s]
+Implicit function computed. Shape: (512000,)
+Running marching cubes...
+Marching cubes completed. Vertices: (1642, 3), faces: (3280, 3)
+Time for StochasticPSR_wOneSolve: 27.811 seconds
+
+Saving StochasticPSR_wOneSolve result for sampled_500_unif_ps0001_ns0050.ply
+Vertices: (1642, 3), Faces: (3280, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR_wOneSolve/sampled_500_unif_ps0001_ns0050.ply
+Mesh saved successfully
+SUCCESS: StochasticPSR_wOneSolve -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR_wOneSolve/sampled_500_unif_ps0001_ns0050.ply
+
+
+Processing file 18: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons/sampled_500_unif_ps0002_ns0100.ply
+Loaded 500 points with normals
+
+Attempting PSR reconstruction...
+Input points shape: (500, 3), normals shape: (500, 3)
+Running PSR with screening_weight=1.0, depth=10
+First point: [0.429697  0.329576  0.0136295], First normal: [ 0.924448  0.367274 -0.102498]
+PSR completed. Output vertices: (1594, 3), faces: (3184, 3)
+Time for PSR: 0.583 seconds
+
+Saving PSR result for sampled_500_unif_ps0002_ns0100.ply
+Vertices: (1594, 3), Faces: (3184, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_500_unif_ps0002_ns0100.ply
+Mesh saved successfully
+SUCCESS: PSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/PSR/sampled_500_unif_ps0002_ns0100.ply
+
+Attempting SPSR reconstruction...
+Input points shape: (500, 3), normals shape: (500, 3)
+Running SPSR with screening_weight=4.0, depth=10
+SPSR completed. Output vertices: (1723, 3), faces: (3434, 3)
+Time for SPSR: 0.604 seconds
+
+Saving SPSR result for sampled_500_unif_ps0002_ns0100.ply
+Vertices: (1723, 3), Faces: (3434, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_500_unif_ps0002_ns0100.ply
+Mesh saved successfully
+SUCCESS: SPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/SPSR/sampled_500_unif_ps0002_ns0100.ply
+
+Attempting StochasticPSR reconstruction...
+Input points shape: (500, 3), normals shape: (500, 3)
+Running StochasticPSR with grid_res=80, box_size=1.5707963267948966
+Calling stochastic_poisson_surface_reconstruction...
+Stochastic reconstruction completed. Running marching cubes...
+Marching cubes completed. Vertices: (1762, 3), faces: (3516, 3)
+Time for StochasticPSR: 26.809 seconds
+
+Saving StochasticPSR result for sampled_500_unif_ps0002_ns0100.ply
+Vertices: (1762, 3), Faces: (3516, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_500_unif_ps0002_ns0100.ply
+Mesh saved successfully
+SUCCESS: StochasticPSR -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR/sampled_500_unif_ps0002_ns0100.ply
+
+Attempting StochasticPSR_wOneSolve reconstruction...
+Input points shape: (500, 3), normals shape: (500, 3)
+Running StochasticPSR_wOneSolve with grid_res=80
+Creating interpolator: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████| 977/977 [00:19<00:00, 51.16it/s]
+Grid prepared with shape: (512000, 3)
+Computing implicit function...
+SDD: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:01<00:00, 810.59it/s]
+Computing mean: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:01<00:00,  1.07s/it]
+SDD: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:01<00:00, 716.22it/s]
+Computing mean: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 16/16 [00:04<00:00,  3.61it/s]
+Implicit function computed. Shape: (512000,)
+Running marching cubes...
+Marching cubes completed. Vertices: (1642, 3), faces: (3280, 3)
+Time for StochasticPSR_wOneSolve: 27.373 seconds
+
+Saving StochasticPSR_wOneSolve result for sampled_500_unif_ps0002_ns0100.ply
+Vertices: (1642, 3), Faces: (3280, 3)
+Output path: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR_wOneSolve/sampled_500_unif_ps0002_ns0100.ply
+Mesh saved successfully
+SUCCESS: StochasticPSR_wOneSolve -> /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/StochasticPSR_wOneSolve/sampled_500_unif_ps0002_ns0100.ply
+
+Batch processing complete. Processed 18 files.
+Timing data saved to: /mnt/h/Hands-on_AI_based_3D_Vision/Project_11/Sampled_Comparisons_Reconstructions/times.json
+Pipeline execution completed.
+(GeoSPSR_uv) user@KirianPC:~/HandsOnProject_11/HandsOn_Project_11/GeoSPSR/GeoSPSR_uv/lib/python3.13/site-packages/meshplot$

@@ -1,0 +1,602 @@
+{
+  "00010218_4769314c71814669ba5d3512_trimesh_013.ply": {
+    "original": "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Dataset\\00010218_4769314c71814669ba5d3512_trimesh_013.ply",
+    "relative_path": "00010218_4769314c71814669ba5d3512_trimesh_013.ply",
+    "PSR": {
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p128_pois_ps0000_ns0000.ply": {
+        "chamfer_distance": 0.019920531666295024,
+        "hausdorff_distance": 0.1899499003139565
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p128_pois_ps0001_ns0050.ply": {
+        "chamfer_distance": 0.018938262265536805,
+        "hausdorff_distance": 0.2904465126112304
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p128_pois_ps0002_ns0100.ply": {
+        "chamfer_distance": 0.018047184540395292,
+        "hausdorff_distance": 0.2994113799182941
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p128_unif_ps0000_ns0000.ply": {
+        "chamfer_distance": 0.019941965038394873,
+        "hausdorff_distance": 0.3065013604938532
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p128_unif_ps0001_ns0050.ply": {
+        "chamfer_distance": 0.019462166005126024,
+        "hausdorff_distance": 0.299660530335163
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p128_unif_ps0002_ns0100.ply": {
+        "chamfer_distance": 0.023298774722144772,
+        "hausdorff_distance": 0.269904970907099
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p2096_pois_ps0000_ns0000.ply": {
+        "chamfer_distance": 0.004663794509406425,
+        "hausdorff_distance": 0.038455603383010684
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p2096_pois_ps0001_ns0050.ply": {
+        "chamfer_distance": 0.004762673702175027,
+        "hausdorff_distance": 0.04447896711543848
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p2096_pois_ps0002_ns0100.ply": {
+        "chamfer_distance": 0.004896376935502357,
+        "hausdorff_distance": 0.08977532319008198
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p2096_unif_ps0000_ns0000.ply": {
+        "chamfer_distance": 0.005098636896978946,
+        "hausdorff_distance": 0.07708458341835517
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p2096_unif_ps0001_ns0050.ply": {
+        "chamfer_distance": 0.004828718330863672,
+        "hausdorff_distance": 0.0605248799376067
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p2096_unif_ps0002_ns0100.ply": {
+        "chamfer_distance": 0.004978039233122717,
+        "hausdorff_distance": 0.053816871104201545
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p512_pois_ps0000_ns0000.ply": {
+        "chamfer_distance": 0.009962318489593981,
+        "hausdorff_distance": 0.08805274617315406
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p512_pois_ps0001_ns0050.ply": {
+        "chamfer_distance": 0.010417039174970033,
+        "hausdorff_distance": 0.10030088057194488
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p512_pois_ps0002_ns0100.ply": {
+        "chamfer_distance": 0.010181582056021356,
+        "hausdorff_distance": 0.08872278290953273
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p512_unif_ps0000_ns0000.ply": {
+        "chamfer_distance": 0.0100925698197944,
+        "hausdorff_distance": 0.11172294233339604
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p512_unif_ps0001_ns0050.ply": {
+        "chamfer_distance": 0.011177539885549806,
+        "hausdorff_distance": 0.2555713618145796
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p512_unif_ps0002_ns0100.ply": {
+        "chamfer_distance": 0.01182220150192307,
+        "hausdorff_distance": 0.26114708911892504
+      }
+    },
+    "SPSR": {
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p128_pois_ps0000_ns0000.ply": {
+        "chamfer_distance": 0.017004589850965597,
+        "hausdorff_distance": 0.16790021281497128
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p128_pois_ps0001_ns0050.ply": {
+        "chamfer_distance": 0.01663824514053422,
+        "hausdorff_distance": 0.28976269254940074
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p128_pois_ps0002_ns0100.ply": {
+        "chamfer_distance": 0.01613331383975615,
+        "hausdorff_distance": 0.2918338971251061
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p128_unif_ps0000_ns0000.ply": {
+        "chamfer_distance": 0.01843678881480218,
+        "hausdorff_distance": 0.3081674782672472
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p128_unif_ps0001_ns0050.ply": {
+        "chamfer_distance": 0.01806649886965835,
+        "hausdorff_distance": 0.3038817929392466
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p128_unif_ps0002_ns0100.ply": {
+        "chamfer_distance": 0.021260416738245205,
+        "hausdorff_distance": 0.23886744323509834
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p2096_pois_ps0000_ns0000.ply": {
+        "chamfer_distance": 0.003568117347364408,
+        "hausdorff_distance": 0.03452773525477824
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p2096_pois_ps0001_ns0050.ply": {
+        "chamfer_distance": 0.0036188317849249444,
+        "hausdorff_distance": 0.025297105732683477
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p2096_pois_ps0002_ns0100.ply": {
+        "chamfer_distance": 0.0037414839191649077,
+        "hausdorff_distance": 0.032353078340263394
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p2096_unif_ps0000_ns0000.ply": {
+        "chamfer_distance": 0.004081129197759998,
+        "hausdorff_distance": 0.0349815008138576
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p2096_unif_ps0001_ns0050.ply": {
+        "chamfer_distance": 0.004004733537470036,
+        "hausdorff_distance": 0.039523052284033064
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p2096_unif_ps0002_ns0100.ply": {
+        "chamfer_distance": 0.004151522910792041,
+        "hausdorff_distance": 0.03438179057426932
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p512_pois_ps0000_ns0000.ply": {
+        "chamfer_distance": 0.00854480901945559,
+        "hausdorff_distance": 0.08814448674486627
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p512_pois_ps0001_ns0050.ply": {
+        "chamfer_distance": 0.008753089219892828,
+        "hausdorff_distance": 0.08912836004296289
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p512_pois_ps0002_ns0100.ply": {
+        "chamfer_distance": 0.008763244051752888,
+        "hausdorff_distance": 0.09191529869103511
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p512_unif_ps0000_ns0000.ply": {
+        "chamfer_distance": 0.008658023158975445,
+        "hausdorff_distance": 0.0917113638134562
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p512_unif_ps0001_ns0050.ply": {
+        "chamfer_distance": 0.009443070616977538,
+        "hausdorff_distance": 0.15257019735144658
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p512_unif_ps0002_ns0100.ply": {
+        "chamfer_distance": 0.009337491908348136,
+        "hausdorff_distance": 0.12750363643557755
+      }
+    },
+    "StochasticPSR": {
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p128_pois_ps0000_ns0000.ply": {
+        "chamfer_distance": 2.253281266433924,
+        "hausdorff_distance": 2.745689510331947
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p128_pois_ps0001_ns0050.ply": {
+        "chamfer_distance": 2.250275088124484,
+        "hausdorff_distance": 2.7510965492614647
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p128_pois_ps0002_ns0100.ply": {
+        "chamfer_distance": 2.256778747836094,
+        "hausdorff_distance": 2.749257726232371
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p128_unif_ps0000_ns0000.ply": {
+        "chamfer_distance": 2.2620626701334445,
+        "hausdorff_distance": 2.7595255162935945
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p128_unif_ps0001_ns0050.ply": {
+        "chamfer_distance": 2.2517766947305273,
+        "hausdorff_distance": 2.7645912084477757
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p128_unif_ps0002_ns0100.ply": {
+        "chamfer_distance": 2.267831405100926,
+        "hausdorff_distance": 2.7755513801113265
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p2096_pois_ps0000_ns0000.ply": {
+        "chamfer_distance": 2.2718097240218986,
+        "hausdorff_distance": 2.771344548676509
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p2096_pois_ps0001_ns0050.ply": {
+        "chamfer_distance": 2.2704993516370537,
+        "hausdorff_distance": 2.7684730607183847
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p2096_pois_ps0002_ns0100.ply": {
+        "chamfer_distance": 2.270838841048403,
+        "hausdorff_distance": 2.769236650896019
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p2096_unif_ps0000_ns0000.ply": {
+        "chamfer_distance": 2.2704461940051353,
+        "hausdorff_distance": 2.7665612999821416
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p2096_unif_ps0001_ns0050.ply": {
+        "chamfer_distance": 2.2686864312101434,
+        "hausdorff_distance": 2.7647393243828846
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p2096_unif_ps0002_ns0100.ply": {
+        "chamfer_distance": 2.270313748534,
+        "hausdorff_distance": 2.773662170954409
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p512_pois_ps0000_ns0000.ply": {
+        "chamfer_distance": 2.2692225970536124,
+        "hausdorff_distance": 2.7675121831621072
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p512_pois_ps0001_ns0050.ply": {
+        "chamfer_distance": 2.2643801795319476,
+        "hausdorff_distance": 2.766512526582556
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p512_pois_ps0002_ns0100.ply": {
+        "chamfer_distance": 2.2710993198938683,
+        "hausdorff_distance": 2.7693035554561685
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p512_unif_ps0000_ns0000.ply": {
+        "chamfer_distance": 2.262040247553954,
+        "hausdorff_distance": 2.76343728489332
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p512_unif_ps0001_ns0050.ply": {
+        "chamfer_distance": 2.273162172459285,
+        "hausdorff_distance": 2.7615474307220365
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p512_unif_ps0002_ns0100.ply": {
+        "chamfer_distance": 2.2728351050707922,
+        "hausdorff_distance": 2.7612255451013894
+      }
+    },
+    "StochasticPSR_wOneSolve": {
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p128_pois_ps0000_ns0000.ply": {
+        "chamfer_distance": 2.284031640162591,
+        "hausdorff_distance": 2.798259860639534
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p128_pois_ps0001_ns0050.ply": {
+        "chamfer_distance": 2.27400922678768,
+        "hausdorff_distance": 2.7910349792358033
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p128_pois_ps0002_ns0100.ply": {
+        "chamfer_distance": 2.281494817607046,
+        "hausdorff_distance": 2.7949648835047607
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p128_unif_ps0000_ns0000.ply": {
+        "chamfer_distance": 2.281694001455648,
+        "hausdorff_distance": 2.8027654877637316
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p128_unif_ps0001_ns0050.ply": {
+        "chamfer_distance": 2.2847350556488384,
+        "hausdorff_distance": 2.8048252802438634
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p128_unif_ps0002_ns0100.ply": {
+        "chamfer_distance": 2.299898057823574,
+        "hausdorff_distance": 2.831962156580682
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p2096_pois_ps0000_ns0000.ply": {
+        "chamfer_distance": 2.287745566239911,
+        "hausdorff_distance": 2.8116393275074087
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p2096_pois_ps0001_ns0050.ply": {
+        "chamfer_distance": 2.2878644812784286,
+        "hausdorff_distance": 2.8100388448064697
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p2096_pois_ps0002_ns0100.ply": {
+        "chamfer_distance": 2.2876452346010367,
+        "hausdorff_distance": 2.8117112695410125
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p2096_unif_ps0000_ns0000.ply": {
+        "chamfer_distance": 2.2836193338770747,
+        "hausdorff_distance": 2.807017043541703
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p2096_unif_ps0001_ns0050.ply": {
+        "chamfer_distance": 2.28737260026678,
+        "hausdorff_distance": 2.8086362482842997
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p2096_unif_ps0002_ns0100.ply": {
+        "chamfer_distance": 2.293435637005948,
+        "hausdorff_distance": 2.818615198115569
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p512_pois_ps0000_ns0000.ply": {
+        "chamfer_distance": 2.288679318437153,
+        "hausdorff_distance": 2.810462985924649
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p512_pois_ps0001_ns0050.ply": {
+        "chamfer_distance": 2.2858303200315375,
+        "hausdorff_distance": 2.808049747832486
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p512_pois_ps0002_ns0100.ply": {
+        "chamfer_distance": 2.28782514739893,
+        "hausdorff_distance": 2.812299041580094
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p512_unif_ps0000_ns0000.ply": {
+        "chamfer_distance": 2.2894201500590565,
+        "hausdorff_distance": 2.818233672002178
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p512_unif_ps0001_ns0050.ply": {
+        "chamfer_distance": 2.2773564707434417,
+        "hausdorff_distance": 2.7958774076175437
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00010218_4769314c71814669ba5d3512_trimesh_013_p512_unif_ps0002_ns0100.ply": {
+        "chamfer_distance": 2.2829821807559796,
+        "hausdorff_distance": 2.8122952272479744
+      }
+    }
+  },
+  "00011000_8a21002f126e4425a811e70a_trimesh_004.ply": {
+    "original": "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Dataset\\00011000_8a21002f126e4425a811e70a_trimesh_004.ply",
+    "relative_path": "00011000_8a21002f126e4425a811e70a_trimesh_004.ply",
+    "PSR": {
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p128_pois_ps0000_ns0000.ply": {
+        "chamfer_distance": 0.02585534360331832,
+        "hausdorff_distance": 0.2057087690799691
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p128_pois_ps0001_ns0050.ply": {
+        "chamfer_distance": 0.024478186761301576,
+        "hausdorff_distance": 0.2082169268859548
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p128_pois_ps0002_ns0100.ply": {
+        "chamfer_distance": 0.023906041177510304,
+        "hausdorff_distance": 0.20819070144225024
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p128_unif_ps0000_ns0000.ply": {
+        "chamfer_distance": 0.027731130855409226,
+        "hausdorff_distance": 0.2168966358777442
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p128_unif_ps0001_ns0050.ply": {
+        "chamfer_distance": 0.03342253296091284,
+        "hausdorff_distance": 0.2825437625437209
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p128_unif_ps0002_ns0100.ply": {
+        "chamfer_distance": 0.025786954092473377,
+        "hausdorff_distance": 0.20709643635243258
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_pois_ps0000_ns0000.ply": {
+        "chamfer_distance": 0.005350607072900252,
+        "hausdorff_distance": 0.1981659247486173
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_pois_ps0001_ns0050.ply": {
+        "chamfer_distance": 0.005455995245262421,
+        "hausdorff_distance": 0.19811887297611158
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_pois_ps0002_ns0100.ply": {
+        "chamfer_distance": 0.005640732231308015,
+        "hausdorff_distance": 0.19875819231149683
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_unif_ps0000_ns0000.ply": {
+        "chamfer_distance": 0.005531682905379005,
+        "hausdorff_distance": 0.14222597266548734
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_unif_ps0001_ns0050.ply": {
+        "chamfer_distance": 0.005733746892589982,
+        "hausdorff_distance": 0.17060392773953156
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_unif_ps0002_ns0100.ply": {
+        "chamfer_distance": 0.006068450622306133,
+        "hausdorff_distance": 0.19813971183781817
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p512_pois_ps0000_ns0000.ply": {
+        "chamfer_distance": 0.01029038508008156,
+        "hausdorff_distance": 0.19940839086004705
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p512_pois_ps0001_ns0050.ply": {
+        "chamfer_distance": 0.010907493364818683,
+        "hausdorff_distance": 0.19939262021544968
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p512_pois_ps0002_ns0100.ply": {
+        "chamfer_distance": 0.010883478164096174,
+        "hausdorff_distance": 0.19833534473530354
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p512_unif_ps0000_ns0000.ply": {
+        "chamfer_distance": 0.013210900482789258,
+        "hausdorff_distance": 0.20042277694762653
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p512_unif_ps0001_ns0050.ply": {
+        "chamfer_distance": 0.012576598493034474,
+        "hausdorff_distance": 0.2030922658964768
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\PSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p512_unif_ps0002_ns0100.ply": {
+        "chamfer_distance": 0.01243010939459896,
+        "hausdorff_distance": 0.2028526163631675
+      }
+    },
+    "SPSR": {
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p128_pois_ps0000_ns0000.ply": {
+        "chamfer_distance": 0.0217896474671395,
+        "hausdorff_distance": 0.19925213560139085
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p128_pois_ps0001_ns0050.ply": {
+        "chamfer_distance": 0.020098829869526956,
+        "hausdorff_distance": 0.19917625414843876
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p128_pois_ps0002_ns0100.ply": {
+        "chamfer_distance": 0.022104659185123908,
+        "hausdorff_distance": 0.19739585840737622
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p128_unif_ps0000_ns0000.ply": {
+        "chamfer_distance": 0.023621201733450226,
+        "hausdorff_distance": 0.21384678527315384
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p128_unif_ps0001_ns0050.ply": {
+        "chamfer_distance": 0.026769936469890687,
+        "hausdorff_distance": 0.24314718758064374
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p128_unif_ps0002_ns0100.ply": {
+        "chamfer_distance": 0.023858039813944916,
+        "hausdorff_distance": 0.20406741623883531
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_pois_ps0000_ns0000.ply": {
+        "chamfer_distance": 0.004675475820294102,
+        "hausdorff_distance": 0.19776756853665944
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_pois_ps0001_ns0050.ply": {
+        "chamfer_distance": 0.0048147339390119245,
+        "hausdorff_distance": 0.19765744446326947
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_pois_ps0002_ns0100.ply": {
+        "chamfer_distance": 0.004895586708135304,
+        "hausdorff_distance": 0.19825529021256882
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_unif_ps0000_ns0000.ply": {
+        "chamfer_distance": 0.004876983593243385,
+        "hausdorff_distance": 0.13286652612926292
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_unif_ps0001_ns0050.ply": {
+        "chamfer_distance": 0.00493261623768105,
+        "hausdorff_distance": 0.09668419188085461
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_unif_ps0002_ns0100.ply": {
+        "chamfer_distance": 0.005300704289033492,
+        "hausdorff_distance": 0.1974835864377724
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p512_pois_ps0000_ns0000.ply": {
+        "chamfer_distance": 0.00805997232203113,
+        "hausdorff_distance": 0.1974764677588496
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p512_pois_ps0001_ns0050.ply": {
+        "chamfer_distance": 0.00876202102227573,
+        "hausdorff_distance": 0.19802353784713714
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p512_pois_ps0002_ns0100.ply": {
+        "chamfer_distance": 0.008705537336532367,
+        "hausdorff_distance": 0.19755518093553043
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p512_unif_ps0000_ns0000.ply": {
+        "chamfer_distance": 0.01128984030446772,
+        "hausdorff_distance": 0.1982444663298969
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p512_unif_ps0001_ns0050.ply": {
+        "chamfer_distance": 0.011018916710232328,
+        "hausdorff_distance": 0.19923807850097766
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\SPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p512_unif_ps0002_ns0100.ply": {
+        "chamfer_distance": 0.010830741102838416,
+        "hausdorff_distance": 0.19953461528874947
+      }
+    },
+    "StochasticPSR": {
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p128_pois_ps0000_ns0000.ply": {
+        "chamfer_distance": 2.1414837714937125,
+        "hausdorff_distance": 2.7756854381752945
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p128_pois_ps0001_ns0050.ply": {
+        "chamfer_distance": 2.1278594695817103,
+        "hausdorff_distance": 2.7691741108964396
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p128_pois_ps0002_ns0100.ply": {
+        "chamfer_distance": 2.1213852902026424,
+        "hausdorff_distance": 2.7580246887406776
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p128_unif_ps0000_ns0000.ply": {
+        "chamfer_distance": 2.16581971666586,
+        "hausdorff_distance": 2.777748864614081
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p128_unif_ps0001_ns0050.ply": {
+        "chamfer_distance": 2.1247880390596636,
+        "hausdorff_distance": 2.732583510187626
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p128_unif_ps0002_ns0100.ply": {
+        "chamfer_distance": 2.1261452848912334,
+        "hausdorff_distance": 2.766252425434649
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_pois_ps0000_ns0000.ply": {
+        "chamfer_distance": 2.148741566609579,
+        "hausdorff_distance": 2.788489050751867
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_pois_ps0001_ns0050.ply": {
+        "chamfer_distance": 2.153198660062499,
+        "hausdorff_distance": 2.7922723084721643
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_pois_ps0002_ns0100.ply": {
+        "chamfer_distance": 2.1512591607790563,
+        "hausdorff_distance": 2.7882284688141907
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_unif_ps0000_ns0000.ply": {
+        "chamfer_distance": 2.148344353988978,
+        "hausdorff_distance": 2.779981430704134
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_unif_ps0001_ns0050.ply": {
+        "chamfer_distance": 2.1491610780742914,
+        "hausdorff_distance": 2.7870615903232103
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_unif_ps0002_ns0100.ply": {
+        "chamfer_distance": 2.147538282276102,
+        "hausdorff_distance": 2.779533431354764
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p512_pois_ps0000_ns0000.ply": {
+        "chamfer_distance": 2.1518599914865026,
+        "hausdorff_distance": 2.7873051826921174
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p512_pois_ps0001_ns0050.ply": {
+        "chamfer_distance": 2.147903049006291,
+        "hausdorff_distance": 2.784756403806335
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p512_pois_ps0002_ns0100.ply": {
+        "chamfer_distance": 2.151070958249022,
+        "hausdorff_distance": 2.788368469020576
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p512_unif_ps0000_ns0000.ply": {
+        "chamfer_distance": 2.1449385835720167,
+        "hausdorff_distance": 2.77180961589739
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p512_unif_ps0001_ns0050.ply": {
+        "chamfer_distance": 2.144952503924695,
+        "hausdorff_distance": 2.779569707817921
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p512_unif_ps0002_ns0100.ply": {
+        "chamfer_distance": 2.148826429589425,
+        "hausdorff_distance": 2.784568690450578
+      }
+    },
+    "StochasticPSR_wOneSolve": {
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p128_pois_ps0000_ns0000.ply": {
+        "chamfer_distance": 2.1890481613573165,
+        "hausdorff_distance": 2.8018504661772514
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p128_pois_ps0001_ns0050.ply": {
+        "chamfer_distance": 2.1904751297703724,
+        "hausdorff_distance": 2.801760143581723
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p128_pois_ps0002_ns0100.ply": {
+        "chamfer_distance": 2.154685981977016,
+        "hausdorff_distance": 2.7705968965837453
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p128_unif_ps0000_ns0000.ply": {
+        "chamfer_distance": 2.19195710385496,
+        "hausdorff_distance": 2.785166989670653
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p128_unif_ps0001_ns0050.ply": {
+        "chamfer_distance": 2.2109590446208305,
+        "hausdorff_distance": 2.793821495764043
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p128_unif_ps0002_ns0100.ply": {
+        "chamfer_distance": 2.163325738640869,
+        "hausdorff_distance": 2.7503520785078925
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_pois_ps0000_ns0000.ply": {
+        "chamfer_distance": 2.171695637404281,
+        "hausdorff_distance": 2.774383151318031
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_pois_ps0001_ns0050.ply": {
+        "chamfer_distance": 2.1824688403773838,
+        "hausdorff_distance": 2.7833052896064516
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_pois_ps0002_ns0100.ply": {
+        "chamfer_distance": 2.1801775240319405,
+        "hausdorff_distance": 2.78050573739208
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_unif_ps0000_ns0000.ply": {
+        "chamfer_distance": 2.175248083643927,
+        "hausdorff_distance": 2.7774945093181516
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_unif_ps0001_ns0050.ply": {
+        "chamfer_distance": 2.1710009226806752,
+        "hausdorff_distance": 2.768440636218849
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p2096_unif_ps0002_ns0100.ply": {
+        "chamfer_distance": 2.1664199244764504,
+        "hausdorff_distance": 2.7812184293107736
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p512_pois_ps0000_ns0000.ply": {
+        "chamfer_distance": 2.180073272573715,
+        "hausdorff_distance": 2.783024939681465
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p512_pois_ps0001_ns0050.ply": {
+        "chamfer_distance": 2.1751891654544977,
+        "hausdorff_distance": 2.7748219149412363
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p512_pois_ps0002_ns0100.ply": {
+        "chamfer_distance": 2.1793813031086406,
+        "hausdorff_distance": 2.783640953124119
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p512_unif_ps0000_ns0000.ply": {
+        "chamfer_distance": 2.173917830420206,
+        "hausdorff_distance": 2.7658857575781335
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p512_unif_ps0001_ns0050.ply": {
+        "chamfer_distance": 2.1597417941053,
+        "hausdorff_distance": 2.765695446197586
+      },
+      "H:\\Hands-on_AI_based_3D_Vision\\Project_11\\Compare_2_Reconstruction\\StochasticPSR_wOneSolve\\.\\00011000_8a21002f126e4425a811e70a_trimesh_004_p512_unif_ps0002_ns0100.ply": {
+        "chamfer_distance": 2.1896645453749617,
+        "hausdorff_distance": 2.78519563694931
+      }
+    }
+  }
+}
